@@ -125,14 +125,16 @@
                         if (l.target === activeNode.id) activeIds.add(l.source);
                     });
                     
-                    // Pass 2: Secondary neighbors (for Person -> HQ -> Subsidiaries)
+                    // Pass 2 & 3: Deep Traversal (for Person -> HQ -> Subsidiaries -> Regional Units)
                     // CRITICAL FIX: Do not rebound back upwards to other Sibling Billionaires! 
                     // This prevents exploding the UI with 15 family members when clicking 1 individual.
-                    const pass1Ids = new Set(activeIds); // Snapshot Pass 1 to avoid mutation during loop
-                    links.forEach(l => {
-                        if (pass1Ids.has(l.source) && nodeTypes[l.target] !== 'Person') activeIds.add(l.target);
-                        if (pass1Ids.has(l.target) && nodeTypes[l.source] !== 'Person') activeIds.add(l.source);
-                    });
+                    for (let pass = 0; pass < 2; pass++) {
+                        const currentIds = new Set(activeIds);
+                        links.forEach(l => {
+                            if (currentIds.has(l.source) && nodeTypes[l.target] !== 'Person') activeIds.add(l.target);
+                            if (currentIds.has(l.target) && nodeTypes[l.source] !== 'Person') activeIds.add(l.source);
+                        });
+                    }
                 }
 
                 // Apply User Rendering Filters
