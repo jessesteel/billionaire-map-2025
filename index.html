@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaire Map</title>
+    
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/index.css">
+
+    <!-- React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    
+    <!-- Babel for JSX compilation in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Leaflet for flat 2D maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        window.addEventListener('error', function(event) {
+            document.body.innerHTML += '<div style="color:red;z-index:9999;position:absolute;top:20px;left:20px;background:black;padding:20px;">' + event.message + '<br>' + event.filename + ':' + event.lineno + '</div>';
+        });
+
+        const { useState, useEffect, useRef, useMemo } = React;
+        const Globe = null; // Replaced with Leaflet
+
+        // Global Geocoding Mocks
+        const cityCoords = {
+            'new york': { lat: 40.71, lng: -74.00 },
+            'paris': { lat: 48.85, lng: 2.35 },
+            'seattle': { lat: 47.60, lng: -122.33 },
+            'austin': { lat: 30.26, lng: -97.74 },
+            'medina': { lat: 47.61, lng: -122.23 },
+            'lanai': { lat: 20.82, lng: -156.92 },
+            'omaha': { lat: 41.25, lng: -95.93 },
+            'palo alto': { lat: 37.44, lng: -122.14 },
+            'mexico city': { lat: 19.43, lng: -99.13 },
+            'mumbai': { lat: 19.07, lng: 72.87 },
+            'hunts point': { lat: 47.63, lng: -122.23 },
+            'la coruna': { lat: 43.36, lng: -8.41 },
+            'los altos': { lat: 37.38, lng: -122.11 },
+            'hangzhou': { lat: 30.27, lng: 120.15 },
+        };
+        const countryCoords = {
+            'united states': { lat: 37.09, lng: -95.71 },
+            'france': { lat: 46.22, lng: 2.21 },
+            'china': { lat: 35.86, lng: 104.19 },
+            'india': { lat: 20.59, lng: 78.96 },
+            'germany': { lat: 51.16, lng: 10.45 },
+        };
+
+        const generateHashCoord = (str) => {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            return {
+                lat: (hash % 160) - 80,
+                lng: ((hash >> 8) % 360) - 180
+            };
+        };
+
+        const FlatMap = ({ nodes, links, walmartLocations, filters, debouncedSearchQuery, onNodeFocus }) => {
+            const mapRef = useRef(null);
+            const mapInstance = useRef(null);
+            const [activeNode, setActiveNode] = useState(null);
+
+            useEffect(() => {
+                if (!mapInstance.current && mapRef.current) {
+                    // Initialize Leaflet map
+                    mapInstance.current = L.map(mapRef.current, {
+                        center: [20, 0],
+                        zoom: 2,
+                        minZoom: 2,
+                        worldCopyJump: true, // Seamless continuous world mirroring
+                        preferCanvas: true // Extreme high-performance rendering for 6000+ points
+                    });
+
+                    // Dark themed flat map (CartoDB Dark Matter)
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                    }).addTo(mapInstance.current);
+                }
+
+                const map = mapInstance.current;
+                
+                // Allow clicking map background to deselect node
+                map.off('click');
+                map.on('click', () => {
+                    setActiveNode(null);
+                    if (onNodeFocus) onNodeFocus(null);
+                });
+
+                // Clear existing layers safely (excluding the base tile layer)
+                map.eachLayer((layer) => {
+                    if (layer instanceof L.CircleMarker || layer instanceof L.Polyline) {
+                        map.removeLayer(layer);
+                    }
+                });
+
+                // Pre-compute active connected component for infinite depth isolation
+                const activeIds = new Set();
+                if (activeNode) {
+                    activeIds.add(activeNode.id);
+                    
+                    const nodeTypes = {};
+                    nodes.forEach(n => nodeTypes[n.id] = n.type);
+
+                    // Pass 1: Direct neighbors
+                    links.forEach(l => {
+                        if (l.source === activeNode.id) activeIds.add(l.target);
+                        if (l.target === activeNode.id) activeIds.add(l.source);
+                    });
+                    
+                    // Pass 2: Secondary neighbors (for Person -> HQ -> Subsidiaries)
+                    // CRITICAL FIX: Do not rebound back upwards to other Sibling Billionaires! 
+                    // This prevents exploding the UI with 15 family members when clicking 1 individual.
+                    const pass1Ids = new Set(activeIds); // Snapshot Pass 1 to avoid mutation during loop
+                    links.forEach(l => {
+                        if (pass1Ids.has(l.source) && nodeTypes[l.target] !== 'Person') activeIds.add(l.target);
+                        if (pass1Ids.has(l.target) && nodeTypes[l.source] !== 'Person') activeIds.add(l.source);
+                    });
+                }
+
+                // Apply User Rendering Filters
+                const visibleNodes = nodes.filter(n => {
+                    if (n.type === 'Person' && !filters.billionaires) return false;
+                    if (n.type === 'Company' && !filters.companies) return false;
+                    if (n.type === 'Sub-Company' && !filters.subs) return false;
+                    return true;
+                });
+                const visibleIds = new Set(visibleNodes.map(n => n.id));
+                const visibleLinks = links.filter(l => visibleIds.has(l.source) && visibleIds.has(l.target));
+
+                // Render Walmart Assets
+                if (filters.assets && walmartLocations && walmartLocations.length > 0) {
+                    // Determine if Walmart HQ is isolated in the network mesh
+                    const isWalmartActive = activeNode && activeIds.has("Walmart");
+                    
+                    walmartLocations.forEach(loc => {
+                        const marker = L.circleMarker([loc[0], loc[1]], {
+                            radius: 1,
+                            color: isWalmartActive ? '#ffb3ff' : '#66004d',
+                            fillColor: isWalmartActive ? '#ffb3ff' : '#66004d',
+                            fillOpacity: isWalmartActive ? 0.8 : 0.2,
+                            opacity: isWalmartActive ? 1 : 0.1,
+                            weight: 1
+                        });
+                        
+                        if (isWalmartActive) {
+                            marker.bindTooltip("<div class='scene-tooltip' style='border:none;background:transparent;box-shadow:none;'><div class='tooltip-meta' style='color:#ff00d2;font-weight:bold;'>Walmart Location</div></div>", { direction: 'top', className: 'leaflet-custom-tooltip' });
+                        }
+                        marker.addTo(map);
+                    });
+                }
+
+                // Inject dual-renderer approach
+                if (!map._animSvgRenderer) map._animSvgRenderer = L.svg();
+                
+                // Render Links (Polylines)
+                visibleLinks.forEach(l => {
+                    // Filter based on click isolation using network traversal
+                    const isActiveLink = activeNode && (activeIds.has(l.source) && activeIds.has(l.target));
+                    const isVisible = !activeNode || isActiveLink;
+                    
+                    if (isVisible) {
+                        const isMajorLink = l.rank && l.rank <= 300;
+                        const restingOpacity = isMajorLink ? 0.25 : 0.02;
+                        const restingWeight = isMajorLink ? 1 : 0.5;
+
+                        // 1. Base Static Line (Canvas for map, SVG for isolation)
+                        const baseLine = L.polyline([[l.startLat, l.startLng], [l.endLat, l.endLng]], {
+                            renderer: isActiveLink ? map._animSvgRenderer : undefined, // Force SVG for active so we can stack
+                            color: isActiveLink ? l.color[1] : l.color[0],
+                            weight: isActiveLink ? 1.5 : restingWeight,
+                            dashArray: isActiveLink ? 'none' : (isMajorLink ? '4, 6' : '3, 10'), 
+                            opacity: isActiveLink ? 0.3 : restingOpacity
+                        });
+                        baseLine.addTo(map);
+                        
+                        // 2. Animated Flow Line (Strictly SVG overlaid on top, representing Capital)
+                        if (isActiveLink) {
+                            const flowingParticles = L.polyline([[l.startLat, l.startLng], [l.endLat, l.endLng]], {
+                                renderer: map._animSvgRenderer,
+                                className: 'capital-flow-anim', // Hooks into our CSS animation
+                                color: '#00ffff', // High viz neon teal
+                                weight: 3,        // Thicker particle size
+                                opacity: 0.9,     // Extremely bright
+                                interactive: false // Don't block clicking
+                            });
+                            flowingParticles.addTo(map);
+                        }
+                    }
+                });
+
+                // Render Nodes (CircleMarkers)
+                let activeBounds = [];
+                
+                // CRITICAL FIX: Sort the visible nodes by wealth descending.
+                // This guarantees that massive corporate behemoths are painted to the 
+                // Canvas FIRST, and smaller actors paint LAST, sitting permanently on top and clickable!
+                visibleNodes.sort((a, b) => {
+                    const worthA = a.type === 'Person' ? a.worth : (a.type === 'Company' ? 3000 : 1000);
+                    const worthB = b.type === 'Person' ? b.worth : (b.type === 'Company' ? 3000 : 1000);
+                    return worthB - worthA;
+                });
+                
+                const query = (debouncedSearchQuery || '').trim().toLowerCase();
+                
+                visibleNodes.forEach(d => {
+                    // Check search query dynamically (bypassed if clicking someone explicitly)
+                    let searchMatch = true;
+                    if (query.length > 0 && !activeNode) {
+                        searchMatch = (d.name && d.name.toLowerCase().includes(query)) || 
+                                      (d.industry && d.industry.toLowerCase().includes(query)) ||
+                                      (d.details && d.details.toLowerCase().includes(query));
+                    }
+                
+                    // Determine isolation visibility
+                    const isConnected = activeNode ? activeIds.has(d.id) : searchMatch;
+                    if (activeNode && isConnected) {
+                        activeBounds.push([d.lat, d.lng]);
+                    }
+
+                    // Mathematically scale nodes based on geometric wealth mapping
+                    let finalRadius = 5;
+                    if (d.type === 'Person') {
+                        // Using Square Root mapping ensures the 2D surface area of the circle precisely mirrors their dollar value!
+                        // $1B = 5px radius, now capped at 18px for better visibility and clicking.
+                        const billions = (d.worth || 1000) / 1000;
+                        finalRadius = Math.min(18, Math.max(5, 3.5 * Math.sqrt(billions)));
+                    } else if (d.type === 'Company') {
+                        finalRadius = 7; // Larger hub
+                    } else if (d.type === 'Sub-Company') {
+                        finalRadius = 4; // Distinct subsidiary
+                    }
+                    
+                    // If an active search is isolating data, completely erase non-matching items to prevent visual compounding!
+                    const isFaded = (query.length > 0 && !activeNode && !isConnected);
+
+                    const marker = L.circleMarker([d.lat, d.lng], {
+                        radius: isFaded ? 0 : finalRadius,
+                        color: 'transparent', // RESTORE INVISIBLE STROKE: No more blobs!
+                        weight: isFaded ? 0 : 35, // Maintain the massive invisible hit-box (35px) for ease of clinical clicking
+                        fillColor: d.color,
+                        fillOpacity: isFaded ? 0.0 : (isConnected ? 0.8 : 0.05),
+                        className: isConnected ? 'glow-node active' : 'dim-node'
+                    });
+
+                    const tooltipHtml = `
+                        <div class="scene-tooltip" style="background:transparent; border:none; box-shadow:none;">
+                        <div class="tooltip-name">${d.name}</div>
+                        ${d.type === 'Person' ? `<div class="tooltip-worth">$${(d.worth / 1000).toFixed(1)} Billion</div>` : 
+                          d.type === 'Sub-Company' ? '<div class="tooltip-meta" style="color: #ffaa00; font-weight: bold;">Subsidiary</div>' : 
+                          '<div class="tooltip-meta" style="color: #ff00d2; font-weight: bold;">Corporate Asset</div>'}
+                        <div class="tooltip-meta">${d.details || d.industry || ''}</div>
+                        </div>
+                    `;
+                    
+                    // Constrain text overlap mathematically: Allow all nodes in group, but randomly offset their boxes so they don't crash
+                    let showPermanent = false;
+                    if (activeNode) {
+                        if (d.id === activeNode.id) showPermanent = true;
+                        if (activeNode.type === 'Person' && activeIds.has(d.id)) showPermanent = true;
+                    }
+                    
+                    // Global Cardinal Anti-Collision System:
+                    // Force overlapping labels to Orbit their dot in different cardinal directions 
+                    // based on a deterministic hash of their name.
+                    const hash = d.name.split('').reduce((a, b) => a + b.charCodeAt(0), 0);
+                    const directions = ['top', 'bottom', 'left', 'right'];
+                    let tooltipDir = directions[hash % 4];
+                    let customOffset = [0, 0];
+                    
+                    if (tooltipDir === 'top') customOffset = [0, -12 - finalRadius];
+                    else if (tooltipDir === 'bottom') customOffset = [0, 12 + finalRadius];
+                    else if (tooltipDir === 'left') customOffset = [-12 - finalRadius, 0];
+                    else if (tooltipDir === 'right') customOffset = [12 + finalRadius, 0];
+
+                    marker.bindTooltip(tooltipHtml, { 
+                        direction: tooltipDir, 
+                        offset: customOffset,
+                        className: 'leaflet-custom-tooltip',
+                        permanent: showPermanent
+                    });
+                    
+                    marker.on('click', (e) => {
+                        L.DomEvent.stopPropagation(e);
+                        setActiveNode(d);
+                        if (onNodeFocus) onNodeFocus(d);
+                    });
+
+                    marker.addTo(map);
+                });
+
+                // Auto-center and zoom into the isolated structure
+                if (activeNode && activeBounds.length > 0) {
+                    map.flyToBounds(activeBounds, { 
+                        padding: [150, 150], 
+                        maxZoom: 5,   // Prevent zooming in too deeply onto single street-levels
+                        duration: 1.2 // Smooth cinematic pan
+                    });
+                }
+
+            }, [nodes, links, activeNode, walmartLocations, filters, debouncedSearchQuery]);
+
+            return (
+                <div className="globe-container">
+                    <div ref={mapRef} style={{ width: '100%', height: '100%', backgroundColor: '#03040b' }} />
+                </div>
+            );
+        };
+
+        const App = () => {
+            const [graphData, setGraphData] = useState({ nodes: [], links: [] });
+            const [walmartLocations, setWalmartLocations] = useState([]);
+            const [filters, setFilters] = useState({ billionaires: true, companies: true, subs: true, assets: true });
+            const [isPanelVisible, setIsPanelVisible] = useState(true);
+            const [searchQuery, setSearchQuery] = useState("");
+            const [debouncedSearchQuery, setDebouncedSearchQuery] = useState("");
+            const [errorMsg, setErrorMsg] = useState(null);
+            
+            // Search Debouncing Logic
+            useEffect(() => {
+                const timer = setTimeout(() => {
+                    setDebouncedSearchQuery(searchQuery);
+                }, 300);
+                return () => clearTimeout(timer);
+            }, [searchQuery]);
+
+            useEffect(() => {
+                const targetUrl = './src/data/billionaires.json';
+                const coordsUrl = './src/data/company_coords.json';
+                const wmtUrl = './src/data/walmart_locations.json';
+
+                const fetchLocalData = async () => {
+                    try {
+                        const res = await fetch(targetUrl);
+                        if (!res.ok) throw new Error("Could not read local billionaires file.");
+                        
+                        let compCoords = {};
+                        try {
+                            const resC = await fetch(coordsUrl);
+                            if (resC.ok) compCoords = await resC.json();
+                        } catch(e) { console.warn("No company HQ coords found. Using fallbacks."); }
+                        
+                        let wmtCoords = [];
+                        try {
+                            const resW = await fetch(wmtUrl);
+                            if (resW.ok) wmtCoords = await resW.json();
+                        } catch(e) { console.warn("No Walmart assets found."); }
+
+                        let holdingData = {};
+                        try {
+                            const resH = await fetch('./src/data/holding_companies.json');
+                            if (resH.ok) holdingData = await resH.json();
+                        } catch(e) { console.warn("No holding companies dataset."); }
+
+                        let globalCities = {};
+                        try {
+                            const resGC = await fetch('./src/data/global_cities.json');
+                            if (resGC.ok) globalCities = await resGC.json();
+                        } catch(e) { console.warn("No global cities cache found."); }
+                        
+                        const json = await res.json();
+                        const persons = json?.personList?.personsLists || [];
+                        const nodes = [];
+                        const links = [];
+                        const companyMap = new Map();
+
+                        // Create city clustering buckets to prevent physical dot stacking!
+                        const cityBuckets = {};
+
+                        persons.forEach((p, i) => {
+                            const cname = (p.city || '').toLowerCase();
+                            const countryName = (p.country || '').toLowerCase();
+                            let startCoords = globalCities[cname] || cityCoords[cname] || countryCoords[countryName];
+                            if (!startCoords) startCoords = generateHashCoord((p.personName || '') + countryName);
+                            
+                            const bucketKey = `${startCoords.lat.toFixed(3)},${startCoords.lng.toFixed(3)}`;
+                            if (!cityBuckets[bucketKey]) {
+                                cityBuckets[bucketKey] = { baseLat: startCoords.lat, baseLng: startCoords.lng, group: [] };
+                            }
+                            cityBuckets[bucketKey].group.push(p);
+                        });
+
+                        // Unpack the city hubs and apply Mathematical Anti-Collision Spacing!
+                        Object.values(cityBuckets).forEach(bucket => {
+                            // Sort massive billionaires to the core of the city, small actors spread out like suburbs
+                            bucket.group.sort((a,b) => b.finalWorth - a.finalWorth);
+                            
+                            bucket.group.forEach((p, index) => {
+                                let finalLat = bucket.baseLat;
+                                let finalLng = bucket.baseLng;
+                                
+                                // Structured Grid-Rank Clustering Algorithm
+                                // Problem: Pure random or spiral scatter looks messy at scale.
+                                // Solution: Arrange billionaires in a compact 5x5 grid ranked by wealth.
+                                // This makes the "grouping" look like an intentional tactical cluster.
+                                if (bucket.group.length > 1) {
+                                    const cols = 5; // Fixed grid width for visual uniformity
+                                    const row = Math.floor(index / cols);
+                                    const col = index % cols;
+                                    
+                                    const spacingLat = 0.005; // 500m vertical
+                                    const spacingLng = 0.007; // 700m horizontal
+                                    
+                                    // Center the grid over the hq coordinates
+                                    const offsetLat = (row - (Math.floor(Math.sqrt(bucket.group.length)) / 2)) * spacingLat;
+                                    const offsetLng = (col - (cols / 2)) * spacingLng;
+                                    
+                                    finalLat += offsetLat;
+                                    finalLng += offsetLng;
+                                }
+                                
+                                // Add Person Node
+                                const personNode = {
+                                    id: p.uri || p.personName,
+                                    type: 'Person',
+                                    lat: finalLat, lng: finalLng,
+                                    color: '#00d2ff', // Electric Blue for owners
+                                    name: p.personName, worth: p.finalWorth,
+                                    industry: p.category, details: p.city ? `${p.city}, ${p.country}` : p.country
+                                };
+                                nodes.push(personNode);
+
+                                // Geocode Company / Organization
+                                let compName = p.organization || p.source;
+                            if (compName) {
+                                // Add company node if it doesn't already exist
+                                if (!companyMap.has(compName)) {
+                                    
+                                    let cCoord;
+                                    if (compCoords[compName]) {
+                                        cCoord = { lat: compCoords[compName].lat, lng: compCoords[compName].lng };
+                                    } else {
+                                        // Cluster the company extremely tightly into the investor's primary urban core (1km jitter)
+                                        cCoord = {
+                                            lat: bucket.baseLat + ((Math.random() - 0.5) * 0.02),
+                                            lng: bucket.baseLng + ((Math.random() - 0.5) * 0.02)
+                                        };
+                                    }
+                                    
+                                    const compNode = {
+                                        id: compName,
+                                        type: 'Company',
+                                        lat: cCoord.lat, lng: cCoord.lng,
+                                        size: 0.3,
+                                        color: '#ff00d2', // Vibrant magenta for corporate entities
+                                        name: compName,
+                                        industry: p.category,
+                                        details: compCoords[compName] ? 'Global Headquarters' : 'Regional Operations'
+                                    };
+                                    companyMap.set(compName, compNode);
+                                    nodes.push(compNode);
+                                    
+                                    // Instantiate subsidiary nodes if this is a mapped conglomerate
+                                    if (holdingData[compName]) {
+                                        holdingData[compName].forEach(sub => {
+                                            const subId = compName + "_" + sub.name;
+                                            if (!companyMap.has(subId)) {
+                                                const subNode = {
+                                                    id: subId,
+                                                    type: 'Sub-Company',
+                                                    lat: sub.lat, lng: sub.lng,
+                                                    size: 0.2, 
+                                                    color: '#ffaa00', // Warning orange to distinguish sub-companies
+                                                    name: sub.name,
+                                                    industry: sub.industry,
+                                                    details: 'Conglomerate Subsidiary'
+                                                };
+                                                companyMap.set(subId, subNode);
+                                                nodes.push(subNode);
+                                                
+                                                // Link HQ -> Subsidiary
+                                                links.push({
+                                                    source: compNode.id, target: subNode.id,
+                                                    startLat: compNode.lat, startLng: compNode.lng,
+                                                    endLat: subNode.lat, endLng: subNode.lng,
+                                                    color: ['rgba(255, 0, 210, 0.4)', 'rgba(255, 170, 0, 0.8)'],
+                                                    rank: 1 // Subsidiary bridges are always major links
+                                                });
+                                            }
+                                        });
+                                    }
+                                }
+                                
+                                const compNode = companyMap.get(compName);
+
+                                // Add Connecting Arc (Billionaire -> Company)
+                                links.push({
+                                    source: personNode.id, target: compNode.id,
+                                    startLat: personNode.lat, startLng: personNode.lng,
+                                    endLat: compNode.lat, endLng: compNode.lng,
+                                    color: ['rgba(0, 210, 255, 0.4)', 'rgba(0, 255, 210, 0.8)'],
+                                    rank: p.rank || 9999
+                                });
+                            }
+                            });
+                        });
+
+                        // --- Institutional Titans Injection ---
+                        // These firms are the "Owners of Everything" but are not individual billionaires.
+                        // We manually inject them so their vast corporate webs are always represented.
+                        const titans = [
+                            { name: "Blackrock, inc", lat: 40.7589, lng: -73.9851, hq: "New York City" },
+                            { name: "Vanguard", lat: 40.0336, lng: -75.4611, hq: "Malvern, PA" },
+                            { name: "State Street", lat: 42.3563, lng: -71.0621, hq: "Boston, MA" }
+                        ];
+
+                        titans.forEach(t => {
+                            if (!companyMap.has(t.name)) {
+                                const titanNode = {
+                                    id: t.name,
+                                    type: 'Company',
+                                    lat: t.lat, lng: t.lng,
+                                    size: 0.4, // Large Hub
+                                    color: '#ff00d2',
+                                    name: t.name,
+                                    industry: 'Institutional Asset Management',
+                                    details: `Global Headquarters (${t.hq})`
+                                };
+                                companyMap.set(t.name, titanNode);
+                                nodes.push(titanNode);
+                                
+                                // Expand their subsidiaries
+                                if (holdingData[t.name]) {
+                                    holdingData[t.name].forEach(sub => {
+                                        const subId = t.name + "_" + sub.name;
+                                        if (!companyMap.has(subId)) {
+                                            const subNode = {
+                                                id: subId,
+                                                type: 'Sub-Company',
+                                                lat: sub.lat, lng: sub.lng,
+                                                size: 0.2, 
+                                                color: '#ffaa00',
+                                                name: sub.name,
+                                                industry: sub.industry,
+                                                details: 'Corporate Holding'
+                                            };
+                                            companyMap.set(subId, subNode);
+                                            nodes.push(subNode);
+                                            links.push({
+                                                source: titanNode.id, target: subNode.id,
+                                                startLat: titanNode.lat, startLng: titanNode.lng,
+                                                endLat: subNode.lat, endLng: subNode.lng,
+                                                color: ['rgba(255, 0, 210, 0.4)', 'rgba(255, 170, 0, 0.8)'],
+                                                rank: 1
+                                            });
+                                        }
+                                    });
+                                }
+                            }
+                        });
+
+                        setGraphData({ nodes, links });
+                        setWalmartLocations(wmtCoords);
+                        setErrorMsg(null);
+                    } catch (err) {
+                        console.error(err);
+                        setErrorMsg("Error: Local data cache could not be loaded.");
+                    }
+                };
+
+                fetchLocalData();
+            }, []);
+
+            const stats = useMemo(() => {
+                const totalWorth = graphData.nodes.filter(n => n.type === 'Person').reduce((acc, b) => acc + (b.worth || 0), 0);
+                return {
+                    count: graphData.nodes.filter(n => n.type === 'Person').length,
+                    companies: graphData.nodes.filter(n => n.type === 'Company').length,
+                    totalWorth: (totalWorth / 1000).toFixed(1)
+                };
+            }, [graphData]);
+
+            return (
+                <div className="app-container">
+                    {!isPanelVisible && (
+                        <button className="show-panel-btn" onClick={() => setIsPanelVisible(true)}>
+                            ⛭ Show Dashboard
+                        </button>
+                    )}
+                    
+                    {isPanelVisible && (
+                        <div className="overlay-panel">
+                            <button onClick={() => setIsPanelVisible(false)} style={{ position: 'absolute', top: '15px', right: '15px', background: 'transparent', border: 'none', color: '#a0a5b8', cursor: 'pointer', fontSize: '1.4rem', lineHeight: '1', padding: '5px' }}>
+                                &times;
+                            </button>
+                            <div className="title-section">
+                                <h1>OpenGrid Wealth</h1>
+                            <p>Global billionaire network and their interconnected corporate assets.</p>
+                            {errorMsg && <div style={{ color: '#ff4444', marginTop: '10px', fontSize: '0.9rem', fontWeight: 'bold' }}>{errorMsg}</div>}
+                        </div>
+                        
+                        <div className="stats-grid">
+                            <div className="stat-box">
+                                <span className="stat-label">Billionaires</span>
+                                <span className="stat-value">{stats.count || '...'}</span>
+                            </div>
+                            <div className="stat-box">
+                                <span className="stat-label">Companies</span>
+                                <span className="stat-value">{stats.companies || '...'}</span>
+                            </div>
+                            <div className="stat-box" style={{gridColumn: "span 2"}}>
+                                <span className="stat-label">Total Capital Controlled</span>
+                                <span className="stat-value">${stats.totalWorth}B</span>
+                            </div>
+                        </div>
+
+                        <div className="filter-panel" style={{ marginTop: '25px', display: 'flex', flexDirection: 'column', gap: '12px', background: 'rgba(255, 255, 255, 0.03)', padding: '15px', borderRadius: '8px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                            <div style={{color: '#fff', fontSize: '0.8rem', fontWeight: '800', letterSpacing: '1px', textTransform: 'uppercase', opacity: '0.5', marginBottom: '4px'}}>Map Layers</div>
+                            <label style={{ color: '#00d2ff', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontWeight: '600' }}>
+                                <input type="checkbox" checked={filters.billionaires} onChange={e => setFilters({...filters, billionaires: e.target.checked})} style={{accentColor: '#00d2ff', width: '16px', height: '16px'}} /> Billionaire Investors
+                            </label>
+                            <label style={{ color: '#ff00d2', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontWeight: '600' }}>
+                                <input type="checkbox" checked={filters.companies} onChange={e => setFilters({...filters, companies: e.target.checked})} style={{accentColor: '#ff00d2', width: '16px', height: '16px'}} /> Primary Corporate HQs
+                            </label>
+                            <label style={{ color: '#ffaa00', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontWeight: '600' }}>
+                                <input type="checkbox" checked={filters.subs} onChange={e => setFilters({...filters, subs: e.target.checked})} style={{accentColor: '#ffaa00', width: '16px', height: '16px'}} /> Conglomerate Subsidiaries
+                            </label>
+                            <label style={{ color: '#ffb3ff', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontWeight: '600' }}>
+                                <input type="checkbox" checked={filters.assets} onChange={e => setFilters({...filters, assets: e.target.checked})} style={{accentColor: '#ffb3ff', width: '16px', height: '16px'}} /> Physical Operations Assets
+                            </label>
+                        </div>
+                    </div>
+                    )}
+                    
+                    {/* Real-time Cinematic Search Bar */}
+                    <div style={{ position: 'absolute', top: '20px', right: '20px', zIndex: 1000, width: '320px', transition: 'all 0.3s ease' }}>
+                        <input
+                            type="text"
+                            placeholder="🔍 Search names, companies..."
+                            value={searchQuery}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                if (isPanelVisible && e.target.value.length > 0) setIsPanelVisible(false); // Auto hide panel when searching
+                            }}
+                            style={{
+                                width: '100%',
+                                padding: '14px 22px',
+                                background: 'rgba(5, 7, 13, 0.75)',
+                                border: '1px solid rgba(0, 210, 255, 0.4)',
+                                borderRadius: '30px',
+                                color: '#ffffff',
+                                outline: 'none',
+                                backdropFilter: 'blur(12px)',
+                                fontSize: '0.95rem',
+                                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.5)',
+                                boxSizing: 'border-box'
+                            }}
+                        />
+                    </div>
+
+                    {graphData.nodes.length > 0 && <FlatMap nodes={graphData.nodes} links={graphData.links} walmartLocations={walmartLocations} filters={filters} debouncedSearchQuery={debouncedSearchQuery} onNodeFocus={n => setIsPanelVisible(!n)} />}
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

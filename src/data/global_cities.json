@@ -1,0 +1,3278 @@
+{
+  "austin": {
+    "lat": 34.99842,
+    "lng": -91.98376
+  },
+  "palo alto": {
+    "lat": 37.44,
+    "lng": -122.14
+  },
+  "miami": {
+    "lat": -28.07173,
+    "lng": 153.44158
+  },
+  "woodside": {
+    "lat": -34.95433,
+    "lng": 138.87901
+  },
+  "paris": {
+    "lat": 43.2,
+    "lng": -80.38333
+  },
+  "omaha": {
+    "lat": 41.25626,
+    "lng": -95.94043
+  },
+  "los altos": {
+    "lat": 37.38,
+    "lng": -122.11
+  },
+  "la coruna": {
+    "lat": 43.3623,
+    "lng": -8.4115
+  },
+  "hunts point": {
+    "lat": 47.63,
+    "lng": -122.23
+  },
+  "bentonville": {
+    "lat": 36.37285,
+    "lng": -94.20882
+  },
+  "medina": {
+    "lat": 47.61,
+    "lng": -122.23
+  },
+  "new york": {
+    "lat": 40.7128,
+    "lng": -74.006
+  },
+  "fort worth": {
+    "lat": 32.72541,
+    "lng": -97.32085
+  },
+  "mumbai": {
+    "lat": 19.07283,
+    "lng": 72.88261
+  },
+  "mexico city": {
+    "lat": 19.42847,
+    "lng": -99.12766
+  },
+  "wichita": {
+    "lat": 37.69224,
+    "lng": -97.33754
+  },
+  "singapore": {
+    "lat": 1.28967,
+    "lng": 103.85007
+  },
+  "dubai": {
+    "lat": 25.07725,
+    "lng": 55.30927
+  },
+  "haverford": {
+    "lat": 40.0151,
+    "lng": -75.3121
+  },
+  "hangzhou": {
+    "lat": 30.29365,
+    "lng": 120.16142
+  },
+  "palm beach": {
+    "lat": -33.59664,
+    "lng": 151.32384
+  },
+  "ahmedabad": {
+    "lat": 23.02579,
+    "lng": 72.58727
+  },
+  "shenzhen": {
+    "lat": 22.54554,
+    "lng": 114.0683
+  },
+  "tokyo": {
+    "lat": 35.6895,
+    "lng": 139.69171
+  },
+  "beijing": {
+    "lat": 39.9075,
+    "lng": 116.39723
+  },
+  "the plains": {
+    "lat": 39.36896,
+    "lng": -82.13237
+  },
+  "jackson": {
+    "lat": 31.50905,
+    "lng": -87.89444
+  },
+  "shanghai": {
+    "lat": 31.22222,
+    "lng": 121.45806
+  },
+  "neckarsulm": {
+    "lat": 49.18912,
+    "lng": 9.22527
+  },
+  "salzburg": {
+    "lat": 47.79941,
+    "lng": 13.04399
+  },
+  "schindellegi": {
+    "lat": 47.1746,
+    "lng": 8.71345
+  },
+  "hong kong": {
+    "lat": 22.27832,
+    "lng": 114.17469
+  },
+  "brussels": {
+    "lat": 50.85045,
+    "lng": 4.34878
+  },
+  "chicago": {
+    "lat": 41.85003,
+    "lng": -87.65005
+  },
+  "ningde": {
+    "lat": 26.66167,
+    "lng": 119.52278
+  },
+  "geneva": {
+    "lat": 31.03296,
+    "lng": -85.86382
+  },
+  "hisar": {
+    "lat": 29.15394,
+    "lng": 75.72294
+  },
+  "hillsboro": {
+    "lat": 39.16128,
+    "lng": -89.4954
+  },
+  "kuenzelsau": {
+    "lat": 49.2789,
+    "lng": 9.6896
+  },
+  "delhi": {
+    "lat": 28.65195,
+    "lng": 77.23149
+  },
+  "st. moritz": {
+    "lat": 46.49937,
+    "lng": 9.84327
+  },
+  "milton": {
+    "lat": -35.31644,
+    "lng": 150.4361
+  },
+  "las vegas": {
+    "lat": 15.01667,
+    "lng": -87.45
+  },
+  "east setauket": {
+    "lat": 40.94149,
+    "lng": -73.10594
+  },
+  "seattle": {
+    "lat": 47.6,
+    "lng": -122.33
+  },
+  "london": {
+    "lat": 42.98339,
+    "lng": -81.23304
+  },
+  "moscow": {
+    "lat": 55.75222,
+    "lng": 37.61556
+  },
+  "dallas": {
+    "lat": -37.67083,
+    "lng": 144.93542
+  },
+  "monte carlo": {
+    "lat": 43.7401,
+    "lng": 7.4266
+  },
+  "santiago": {
+    "lat": -29.19167,
+    "lng": -54.86722
+  },
+  "franklin": {
+    "lat": -43.08884,
+    "lng": 147.00906
+  },
+  "jakarta": {
+    "lat": -6.21462,
+    "lng": 106.84513
+  },
+  "nashville": {
+    "lat": 33.94567,
+    "lng": -93.84713
+  },
+  "foshan": {
+    "lat": 23.02677,
+    "lng": 113.13148
+  },
+  "bad homburg": {
+    "lat": 50.2269,
+    "lng": 8.6186
+  },
+  "laval": {
+    "lat": 45.56995,
+    "lng": -73.692
+  },
+  "atherton": {
+    "lat": -17.26864,
+    "lng": 145.47522
+  },
+  "lagos": {
+    "lat": 6.45407,
+    "lng": 3.39467
+  },
+  "frankfurt": {
+    "lat": 50.1109,
+    "lng": 8.6821
+  },
+  "pune": {
+    "lat": 18.51957,
+    "lng": 73.85535
+  },
+  "eau claire": {
+    "lat": 44.81135,
+    "lng": -91.49849
+  },
+  "roquebrune-cap-martin": {
+    "lat": 43.76408,
+    "lng": 7.48207
+  },
+  "kudus": {
+    "lat": -6.8048,
+    "lng": 110.8405
+  },
+  "afton": {
+    "lat": 36.69369,
+    "lng": -94.96302
+  },
+  "greenwich": {
+    "lat": -33.83954,
+    "lng": 151.183
+  },
+  "crans-montana": {
+    "lat": 46.31316,
+    "lng": 7.47914
+  },
+  "guangzhou": {
+    "lat": 23.11667,
+    "lng": 113.25
+  },
+  "newport beach": {
+    "lat": 33.61891,
+    "lng": -117.92895
+  },
+  "osaka": {
+    "lat": 34.69379,
+    "lng": 135.50107
+  },
+  "sydney": {
+    "lat": -33.86785,
+    "lng": 151.20732
+  },
+  "stockholm": {
+    "lat": 59.32938,
+    "lng": 18.06871
+  },
+  "oklahoma city": {
+    "lat": 35.46756,
+    "lng": -97.51643
+  },
+  "prague": {
+    "lat": 50.08804,
+    "lng": 14.42076
+  },
+  "electra": {
+    "lat": 34.02926,
+    "lng": -98.91896
+  },
+  "ras al khaimah": {
+    "lat": 25.7895,
+    "lng": 55.9432
+  },
+  "manila": {
+    "lat": 14.6042,
+    "lng": 120.9822
+  },
+  "zurich": {
+    "lat": 47.3769,
+    "lng": 8.5417
+  },
+  "san francisco": {
+    "lat": -31.42497,
+    "lng": -62.08404
+  },
+  "denver": {
+    "lat": 35.53125,
+    "lng": -81.0298
+  },
+  "tashkent": {
+    "lat": 41.26465,
+    "lng": 69.21627
+  },
+  "riyadh": {
+    "lat": 24.68773,
+    "lng": 46.72185
+  },
+  "los angeles": {
+    "lat": 40.35579,
+    "lng": -3.69914
+  },
+  "newport coast": {
+    "lat": 33.6062,
+    "lng": -117.8251
+  },
+  "san jose": {
+    "lat": 18.1958,
+    "lng": -88.57121
+  },
+  "beverly hills": {
+    "lat": -33.94799,
+    "lng": 151.07979
+  },
+  "tulsa": {
+    "lat": 36.15398,
+    "lng": -95.99277
+  },
+  "binzhou": {
+    "lat": 37.36667,
+    "lng": 118.01667
+  },
+  "bangkok": {
+    "lat": 13.75398,
+    "lng": 100.50144
+  },
+  "heidelberg": {
+    "lat": -37.75,
+    "lng": 145.06667
+  },
+  "mulheim an der ruhr": {
+    "lat": 51.4278,
+    "lng": 6.8828
+  },
+  "muelheim": {
+    "lat": 51.4278,
+    "lng": 6.8828
+  },
+  "neuss": {
+    "lat": 51.19807,
+    "lng": 6.68504
+  },
+  "tempe": {
+    "lat": -33.92335,
+    "lng": 151.1602
+  },
+  "henderson": {
+    "lat": -36.29818,
+    "lng": -61.71856
+  },
+  "gladwyne": {
+    "lat": 40.0354,
+    "lng": -75.2818
+  },
+  "nanyang": {
+    "lat": 32.99472,
+    "lng": 112.53278
+  },
+  "yinchuan": {
+    "lat": 38.46806,
+    "lng": 106.27306
+  },
+  "perth": {
+    "lat": -31.95224,
+    "lng": 115.8614
+  },
+  "cape town": {
+    "lat": -33.92584,
+    "lng": 18.42322
+  },
+  "irvine": {
+    "lat": 55.6194,
+    "lng": -4.65508
+  },
+  "rolling hills": {
+    "lat": 33.75739,
+    "lng": -118.35752
+  },
+  "incline village": {
+    "lat": 39.2513,
+    "lng": -119.97297
+  },
+  "ulm": {
+    "lat": 48.39841,
+    "lng": 9.99155
+  },
+  "naples": {
+    "lat": 40.85216,
+    "lng": 14.26811
+  },
+  "boston": {
+    "lat": 52.97633,
+    "lng": -0.02664
+  },
+  "winnetka": {
+    "lat": 42.10808,
+    "lng": -87.7359
+  },
+  "kielce": {
+    "lat": 50.87033,
+    "lng": 20.62752
+  },
+  "haiger": {
+    "lat": 50.74162,
+    "lng": 8.20778
+  },
+  "monaco": {
+    "lat": 43.73718,
+    "lng": 7.42145
+  },
+  "changzhou": {
+    "lat": 31.77359,
+    "lng": 119.95401
+  },
+  "baoding": {
+    "lat": 38.87288,
+    "lng": 115.46246
+  },
+  "keene": {
+    "lat": 32.39681,
+    "lng": -97.3239
+  },
+  "clearwater": {
+    "lat": 27.96585,
+    "lng": -82.8001
+  },
+  "hobe sound": {
+    "lat": 27.0595,
+    "lng": -80.13643
+  },
+  "reno": {
+    "lat": 39.37285,
+    "lng": -81.39567
+  },
+  "milan": {
+    "lat": 45.46427,
+    "lng": 9.18951
+  },
+  "brookline": {
+    "lat": 42.33176,
+    "lng": -71.12116
+  },
+  "taipei": {
+    "lat": 25.05306,
+    "lng": 121.52639
+  },
+  "gstaad": {
+    "lat": 46.47215,
+    "lng": 7.28685
+  },
+  "atlanta": {
+    "lat": 33.749,
+    "lng": -84.38798
+  },
+  "hampton": {
+    "lat": -37.95,
+    "lng": 145.0
+  },
+  "vancouver": {
+    "lat": 49.24966,
+    "lng": -123.11934
+  },
+  "st. louis": {
+    "lat": 38.62727,
+    "lng": -90.19789
+  },
+  "houston": {
+    "lat": 54.39976,
+    "lng": -126.67008
+  },
+  "tegernsee": {
+    "lat": 47.7123,
+    "lng": 11.7582
+  },
+  "san antonio": {
+    "lat": -26.05993,
+    "lng": -53.73578
+  },
+  "elizabeth": {
+    "lat": 39.06341,
+    "lng": -81.39512
+  },
+  "vienna": {
+    "lat": 48.20849,
+    "lng": 16.37208
+  },
+  "panama city": {
+    "lat": 30.15946,
+    "lng": -85.65983
+  },
+  "alexandria": {
+    "lat": -33.89989,
+    "lng": 151.19951
+  },
+  "philadelphia": {
+    "lat": 32.77152,
+    "lng": -89.11673
+  },
+  "frauenfeld": {
+    "lat": 47.55776,
+    "lng": 8.89893
+  },
+  "surrey": {
+    "lat": 49.10635,
+    "lng": -122.82509
+  },
+  "newmarket": {
+    "lat": -27.43534,
+    "lng": 153.00781
+  },
+  "bloomington": {
+    "lat": 39.16533,
+    "lng": -86.52639
+  },
+  "bryn mawr": {
+    "lat": 40.30396,
+    "lng": -80.08672
+  },
+  "herzogenaurach": {
+    "lat": 49.56798,
+    "lng": 10.88565
+  },
+  "johannesburg": {
+    "lat": -26.20227,
+    "lng": 28.04363
+  },
+  "lucerne": {
+    "lat": 36.38078,
+    "lng": -119.6643
+  },
+  "honolulu": {
+    "lat": 21.30694,
+    "lng": -157.85833
+  },
+  "adel": {
+    "lat": 31.13727,
+    "lng": -83.42408
+  },
+  "toronto": {
+    "lat": -33.01357,
+    "lng": 151.59373
+  },
+  "taoyuan": {
+    "lat": 33.85278,
+    "lng": 117.77028
+  },
+  "truckee": {
+    "lat": 39.32796,
+    "lng": -120.18325
+  },
+  "cary": {
+    "lat": 35.79154,
+    "lng": -78.78112
+  },
+  "kuala lumpur": {
+    "lat": 3.1412,
+    "lng": 101.68653
+  },
+  "miami beach": {
+    "lat": 25.79065,
+    "lng": -80.13005
+  },
+  "bloomfield hills": {
+    "lat": 42.58364,
+    "lng": -83.24549
+  },
+  "seoul": {
+    "lat": 37.566,
+    "lng": 126.9784
+  },
+  "magnitogorsk": {
+    "lat": 53.39808,
+    "lng": 59.0066
+  },
+  "cairo": {
+    "lat": 30.06263,
+    "lng": 31.24967
+  },
+  "baton rouge": {
+    "lat": 30.44332,
+    "lng": -91.18747
+  },
+  "herzliya": {
+    "lat": 32.16627,
+    "lng": 34.82536
+  },
+  "lianyungang": {
+    "lat": 34.59845,
+    "lng": 119.21556
+  },
+  "verbier": {
+    "lat": 46.1002,
+    "lng": 7.22651
+  },
+  "springfield": {
+    "lat": -27.65365,
+    "lng": 152.91716
+  },
+  "hamburg": {
+    "lat": 53.55073,
+    "lng": 9.99302
+  },
+  "auckland": {
+    "lat": -36.84853,
+    "lng": 174.76349
+  },
+  "sands point": {
+    "lat": 40.85177,
+    "lng": -73.71874
+  },
+  "ningbo": {
+    "lat": 29.87819,
+    "lng": 121.54945
+  },
+  "modena": {
+    "lat": 44.64783,
+    "lng": 10.92539
+  },
+  "munich": {
+    "lat": 48.13743,
+    "lng": 11.57549
+  },
+  "hyderabad": {
+    "lat": 25.39689,
+    "lng": 68.37718
+  },
+  "falls church": {
+    "lat": 38.88233,
+    "lng": -77.17109
+  },
+  "washington": {
+    "lat": 12.55837,
+    "lng": -70.03816
+  },
+  "george town": {
+    "lat": -41.10559,
+    "lng": 146.82606
+  },
+  "redlands": {
+    "lat": 34.05557,
+    "lng": -117.18254
+  },
+  "feldmeilen": {
+    "lat": 47.27873,
+    "lng": 8.62165
+  },
+  "bal harbour": {
+    "lat": 25.89176,
+    "lng": -80.12699
+  },
+  "chengdu": {
+    "lat": 30.66667,
+    "lng": 104.06667
+  },
+  "pompano beach": {
+    "lat": 26.23786,
+    "lng": -80.12477
+  },
+  "portage": {
+    "lat": 41.57587,
+    "lng": -87.17615
+  },
+  "darien": {
+    "lat": 3.93135,
+    "lng": -76.48481
+  },
+  "lexington": {
+    "lat": 33.86984,
+    "lng": -83.11182
+  },
+  "knoxville": {
+    "lat": 32.72431,
+    "lng": -83.99769
+  },
+  "lyman": {
+    "lat": 49.59358,
+    "lng": 36.46548
+  },
+  "jona": {
+    "lat": 47.22983,
+    "lng": 8.83884
+  },
+  "lighthouse point": {
+    "lat": 26.27564,
+    "lng": -80.08727
+  },
+  "santa barbara": {
+    "lat": 16.0009,
+    "lng": 120.4023
+  },
+  "rome": {
+    "lat": 41.89193,
+    "lng": 12.51133
+  },
+  "erie": {
+    "lat": 37.56811,
+    "lng": -95.24331
+  },
+  "portola valley": {
+    "lat": 37.38411,
+    "lng": -122.23524
+  },
+  "melbourne": {
+    "lat": -37.814,
+    "lng": 144.96332
+  },
+  "bogota": {
+    "lat": 40.87621,
+    "lng": -74.02986
+  },
+  "changsha": {
+    "lat": 22.38124,
+    "lng": 112.68492
+  },
+  "buenos aires": {
+    "lat": -34.61315,
+    "lng": -58.37723
+  },
+  "steamboat springs": {
+    "lat": 40.48498,
+    "lng": -106.83172
+  },
+  "donetsk": {
+    "lat": 48.33751,
+    "lng": 39.95416
+  },
+  "bruchsal": {
+    "lat": 49.12426,
+    "lng": 8.59804
+  },
+  "quanzhou": {
+    "lat": 25.93545,
+    "lng": 111.06752
+  },
+  "tel aviv": {
+    "lat": 32.08088,
+    "lng": 34.78057
+  },
+  "new albany": {
+    "lat": 38.28562,
+    "lng": -85.82413
+  },
+  "suzhou": {
+    "lat": 33.63611,
+    "lng": 116.97889
+  },
+  "malibu": {
+    "lat": 34.02577,
+    "lng": -118.7804
+  },
+  "marseille": {
+    "lat": 43.29695,
+    "lng": 5.38107
+  },
+  "madison": {
+    "lat": 34.69926,
+    "lng": -86.74833
+  },
+  "athens": {
+    "lat": 37.98376,
+    "lng": 23.72784
+  },
+  "boca raton": {
+    "lat": 26.35869,
+    "lng": -80.0831
+  },
+  "kolkata": {
+    "lat": 22.56263,
+    "lng": 88.36304
+  },
+  "a coru\u00f1a": {
+    "lat": 43.37135,
+    "lng": -8.396
+  },
+  "millburn": {
+    "lat": 40.72482,
+    "lng": -74.30404
+  },
+  "scarsdale": {
+    "lat": 41.0051,
+    "lng": -73.78458
+  },
+  "missoula": {
+    "lat": 46.87215,
+    "lng": -113.994
+  },
+  "stoke-on-trent": {
+    "lat": 53.00415,
+    "lng": -2.18538
+  },
+  "lyon": {
+    "lat": 45.74846,
+    "lng": 4.84671
+  },
+  "glendora": {
+    "lat": 39.83956,
+    "lng": -75.07351
+  },
+  "langfang": {
+    "lat": 39.52079,
+    "lng": 116.71471
+  },
+  "billund": {
+    "lat": 55.73349,
+    "lng": 9.10785
+  },
+  "fiesole": {
+    "lat": 43.80455,
+    "lng": 11.29487
+  },
+  "branford": {
+    "lat": 41.27954,
+    "lng": -72.8151
+  },
+  "katonah": {
+    "lat": 41.25898,
+    "lng": -73.68541
+  },
+  "wenzhou": {
+    "lat": 27.99942,
+    "lng": 120.66682
+  },
+  "new orleans": {
+    "lat": 29.95465,
+    "lng": -90.07507
+  },
+  "almaty": {
+    "lat": 43.25,
+    "lng": 76.91667
+  },
+  "islamorada": {
+    "lat": 24.9243,
+    "lng": -80.62784
+  },
+  "los altos hills": {
+    "lat": 37.37966,
+    "lng": -122.13746
+  },
+  "battenberg": {
+    "lat": 51.01391,
+    "lng": 8.64603
+  },
+  "zhengzhou": {
+    "lat": 34.75778,
+    "lng": 113.64861
+  },
+  "madrid": {
+    "lat": 4.73245,
+    "lng": -74.26419
+  },
+  "leawood": {
+    "lat": 38.96667,
+    "lng": -94.6169
+  },
+  "liaocheng": {
+    "lat": 36.45064,
+    "lng": 116.00247
+  },
+  "oak brook": {
+    "lat": 41.83281,
+    "lng": -87.92895
+  },
+  "north palm beach": {
+    "lat": 26.81756,
+    "lng": -80.08199
+  },
+  "youngstown": {
+    "lat": 30.36436,
+    "lng": -85.43826
+  },
+  "muttontown": {
+    "lat": 40.82399,
+    "lng": -73.54763
+  },
+  "luxembourg": {
+    "lat": 49.61167,
+    "lng": 6.13
+  },
+  "grand rapids": {
+    "lat": 42.96336,
+    "lng": -85.66809
+  },
+  "krotoszyn,": {
+    "lat": 51.69868,
+    "lng": 17.43738
+  },
+  "hanoi": {
+    "lat": 21.0245,
+    "lng": 105.84117
+  },
+  "saddle river": {
+    "lat": 41.03176,
+    "lng": -74.10209
+  },
+  "newton": {
+    "lat": -34.88207,
+    "lng": 138.68249
+  },
+  "chongqing": {
+    "lat": 29.56026,
+    "lng": 106.55771
+  },
+  "paradise valley": {
+    "lat": 33.53115,
+    "lng": -111.94265
+  },
+  "valencia": {
+    "lat": 8.25801,
+    "lng": -76.14928
+  },
+  "zermatt": {
+    "lat": 46.01998,
+    "lng": 7.74863
+  },
+  "birmingham": {
+    "lat": 52.48142,
+    "lng": -1.89983
+  },
+  "hefei": {
+    "lat": 31.86389,
+    "lng": 117.28083
+  },
+  "lausanne": {
+    "lat": 46.516,
+    "lng": 6.63282
+  },
+  "stuttgart": {
+    "lat": 48.78232,
+    "lng": 9.17702
+  },
+  "saint petersburg": {
+    "lat": 59.93863,
+    "lng": 30.31413
+  },
+  "visbek": {
+    "lat": 52.83333,
+    "lng": 8.31667
+  },
+  "lake forest": {
+    "lat": 25.97759,
+    "lng": -80.1831
+  },
+  "port washington": {
+    "lat": 40.82566,
+    "lng": -73.69819
+  },
+  "redding": {
+    "lat": 55.98861,
+    "lng": -3.7323
+  },
+  "trondheim": {
+    "lat": 63.43049,
+    "lng": 10.39506
+  },
+  "edmonton": {
+    "lat": -17.01902,
+    "lng": 145.74443
+  },
+  "memphis": {
+    "lat": 27.53587,
+    "lng": -82.56121
+  },
+  "phoenix": {
+    "lat": 41.61115,
+    "lng": -87.63477
+  },
+  "chevy chase": {
+    "lat": 38.981,
+    "lng": -77.083
+  },
+  "essen": {
+    "lat": 51.46791,
+    "lng": 4.46901
+  },
+  "istanbul": {
+    "lat": 41.01384,
+    "lng": 28.94966
+  },
+  "abu dhabi": {
+    "lat": 24.45118,
+    "lng": 54.39696
+  },
+  "east aurora": {
+    "lat": 42.76784,
+    "lng": -78.61336
+  },
+  "binningen": {
+    "lat": 47.54021,
+    "lng": 7.56932
+  },
+  "croton-on-hudson": {
+    "lat": 41.20843,
+    "lng": -73.89125
+  },
+  "coconut grove": {
+    "lat": -12.39602,
+    "lng": 130.85186
+  },
+  "treviso": {
+    "lat": 45.66673,
+    "lng": 12.2416
+  },
+  "weifang": {
+    "lat": 36.71,
+    "lng": 119.10194
+  },
+  "wynnewood": {
+    "lat": 34.64342,
+    "lng": -97.16447
+  },
+  "bremen": {
+    "lat": 53.07582,
+    "lng": 8.80717
+  },
+  "pacific palisades": {
+    "lat": 34.04806,
+    "lng": -118.52647
+  },
+  "sewickley": {
+    "lat": 40.53646,
+    "lng": -80.1845
+  },
+  "venice": {
+    "lat": 45.43713,
+    "lng": 12.33265
+  },
+  "florence": {
+    "lat": 43.77925,
+    "lng": 11.24626
+  },
+  "santa cruz": {
+    "lat": 12.50953,
+    "lng": -69.98094
+  },
+  "walldorf": {
+    "lat": 50.61667,
+    "lng": 10.38333
+  },
+  "lantana": {
+    "lat": 26.58674,
+    "lng": -80.05199
+  },
+  "attendorn": {
+    "lat": 51.12645,
+    "lng": 7.90333
+  },
+  "delray beach": {
+    "lat": 26.46146,
+    "lng": -80.07282
+  },
+  "changshu": {
+    "lat": 31.64615,
+    "lng": 120.74221
+  },
+  "san anselmo": {
+    "lat": 37.97465,
+    "lng": -122.56164
+  },
+  "indianapolis": {
+    "lat": 39.76838,
+    "lng": -86.15804
+  },
+  "basel": {
+    "lat": 47.55839,
+    "lng": 7.57327
+  },
+  "shaoxing": {
+    "lat": 30.00237,
+    "lng": 120.57864
+  },
+  "the woodlands": {
+    "lat": 30.15799,
+    "lng": -95.48938
+  },
+  "charleston": {
+    "lat": 35.29704,
+    "lng": -94.03632
+  },
+  "davos": {
+    "lat": 46.80429,
+    "lng": 9.83723
+  },
+  "kowloon": {
+    "lat": 22.31667,
+    "lng": 114.18333
+  },
+  "piraeus": {
+    "lat": 37.94203,
+    "lng": 23.64619
+  },
+  "duderstadt": {
+    "lat": 51.51312,
+    "lng": 10.25951
+  },
+  "netanya": {
+    "lat": 32.33291,
+    "lng": 34.85992
+  },
+  "irkutsk": {
+    "lat": 52.29795,
+    "lng": 104.29585
+  },
+  "manantiales": {
+    "lat": 20.17316,
+    "lng": -97.11064
+  },
+  "bingham farms": {
+    "lat": 42.51587,
+    "lng": -83.27326
+  },
+  "carmel": {
+    "lat": 39.97837,
+    "lng": -86.11804
+  },
+  "racine": {
+    "lat": 42.72613,
+    "lng": -87.78285
+  },
+  "marbella": {
+    "lat": 36.51543,
+    "lng": -4.88583
+  },
+  "wilson": {
+    "lat": -32.02058,
+    "lng": 115.91181
+  },
+  "kent": {
+    "lat": 8.33333,
+    "lng": -13.06667
+  },
+  "fort lauderdale": {
+    "lat": 26.12231,
+    "lng": -80.14338
+  },
+  "short hills": {
+    "lat": 40.74788,
+    "lng": -74.32543
+  },
+  "virginia beach": {
+    "lat": 36.85293,
+    "lng": -75.97799
+  },
+  "coral gables": {
+    "lat": 25.72149,
+    "lng": -80.26838
+  },
+  "santa clara": {
+    "lat": -10.19156,
+    "lng": 15.43408
+  },
+  "indian creek": {
+    "lat": 17.75224,
+    "lng": -88.71922
+  },
+  "lille": {
+    "lat": 51.24197,
+    "lng": 4.82313
+  },
+  "rancho santa fe": {
+    "lat": 33.02032,
+    "lng": -117.20281
+  },
+  "ormond beach": {
+    "lat": 29.28581,
+    "lng": -81.05589
+  },
+  "grebenhain": {
+    "lat": 50.48924,
+    "lng": 9.33855
+  },
+  "coburg": {
+    "lat": -37.75,
+    "lng": 144.96667
+  },
+  "menlo park": {
+    "lat": 37.45383,
+    "lng": -122.18219
+  },
+  "rio de janeiro": {
+    "lat": -22.90642,
+    "lng": -43.18223
+  },
+  "passau": {
+    "lat": 48.5665,
+    "lng": 13.43122
+  },
+  "potomac": {
+    "lat": 39.01817,
+    "lng": -77.20859
+  },
+  "fuqing": {
+    "lat": 25.7294,
+    "lng": 119.37469
+  },
+  "san marcos": {
+    "lat": 8.65972,
+    "lng": -75.12809
+  },
+  "glencoe": {
+    "lat": 42.75009,
+    "lng": -81.71648
+  },
+  "salt lake city": {
+    "lat": 40.76078,
+    "lng": -111.89105
+  },
+  "east hampton": {
+    "lat": 37.03737,
+    "lng": -76.33161
+  },
+  "weiningen": {
+    "lat": 47.42022,
+    "lng": 8.43644
+  },
+  "southampton": {
+    "lat": 50.90395,
+    "lng": -1.40428
+  },
+  "westlake": {
+    "lat": -27.54862,
+    "lng": 152.91276
+  },
+  "cockeysville": {
+    "lat": 39.48122,
+    "lng": -76.64386
+  },
+  "fayetteville": {
+    "lat": 33.14567,
+    "lng": -86.40581
+  },
+  "sag harbor": {
+    "lat": 40.99788,
+    "lng": -72.29258
+  },
+  "burgdorf": {
+    "lat": 47.05901,
+    "lng": 7.62786
+  },
+  "nagpur": {
+    "lat": 21.14631,
+    "lng": 79.08491
+  },
+  "mainz": {
+    "lat": 49.98419,
+    "lng": 8.2791
+  },
+  "chennai": {
+    "lat": 13.08784,
+    "lng": 80.27847
+  },
+  "hsinchu": {
+    "lat": 24.80361,
+    "lng": 120.96861
+  },
+  "livingston": {
+    "lat": 55.90288,
+    "lng": -3.52261
+  },
+  "birchwood": {
+    "lat": 45.06108,
+    "lng": -92.97605
+  },
+  "petaling jaya": {
+    "lat": 3.10726,
+    "lng": 101.60671
+  },
+  "bozeman": {
+    "lat": 45.67965,
+    "lng": -111.03856
+  },
+  "park city": {
+    "lat": 37.80001,
+    "lng": -97.31838
+  },
+  "saratoga": {
+    "lat": -33.47564,
+    "lng": 151.35207
+  },
+  "qingdao": {
+    "lat": 36.06488,
+    "lng": 120.38042
+  },
+  "grimisuat": {
+    "lat": 46.25938,
+    "lng": 7.38408
+  },
+  "coatesville": {
+    "lat": 39.98316,
+    "lng": -75.82384
+  },
+  "g\u00f6teborg": {
+    "lat": 57.70716,
+    "lng": 11.96679
+  },
+  "fort collins": {
+    "lat": 40.58526,
+    "lng": -105.08442
+  },
+  "grants pass": {
+    "lat": 42.43933,
+    "lng": -123.33067
+  },
+  "lakeland": {
+    "lat": 28.03947,
+    "lng": -81.9498
+  },
+  "pleasanton": {
+    "lat": 38.17781,
+    "lng": -94.71135
+  },
+  "fushun": {
+    "lat": 41.88669,
+    "lng": 123.94363
+  },
+  "fuzhou": {
+    "lat": 27.95999,
+    "lng": 116.33333
+  },
+  "temple": {
+    "lat": 33.73705,
+    "lng": -85.03244
+  },
+  "doha": {
+    "lat": 25.28545,
+    "lng": 51.53096
+  },
+  "cincinnati": {
+    "lat": 39.12711,
+    "lng": -84.51439
+  },
+  "mclean": {
+    "lat": 38.93428,
+    "lng": -77.17748
+  },
+  "esporles": {
+    "lat": 39.66794,
+    "lng": 2.57867
+  },
+  "scottsdale": {
+    "lat": -41.1578,
+    "lng": 147.51727
+  },
+  "dammam": {
+    "lat": 26.43442,
+    "lng": 50.10326
+  },
+  "plantation": {
+    "lat": 26.13421,
+    "lng": -80.23184
+  },
+  "burlingame": {
+    "lat": 37.5841,
+    "lng": -122.36608
+  },
+  "bethesda": {
+    "lat": 53.1815,
+    "lng": -4.05828
+  },
+  "oslo": {
+    "lat": 59.91273,
+    "lng": 10.74609
+  },
+  "kirkkonummi": {
+    "lat": 60.12381,
+    "lng": 24.43853
+  },
+  "ventura": {
+    "lat": -2.24811,
+    "lng": -79.12386
+  },
+  "como": {
+    "lat": -33.99941,
+    "lng": 151.06389
+  },
+  "pittsburgh": {
+    "lat": 40.44062,
+    "lng": -79.99589
+  },
+  "astana": {
+    "lat": 51.1801,
+    "lng": 71.44598
+  },
+  "st. petersburg": {
+    "lat": 27.77086,
+    "lng": -82.67927
+  },
+  "wuhan": {
+    "lat": 30.58333,
+    "lng": 114.26667
+  },
+  "jiangyin": {
+    "lat": 31.91102,
+    "lng": 120.26302
+  },
+  "tampa": {
+    "lat": 27.94752,
+    "lng": -82.45843
+  },
+  "k\u00fcsnacht": {
+    "lat": 47.31805,
+    "lng": 8.58401
+  },
+  "belle vernon": {
+    "lat": 40.12507,
+    "lng": -79.86644
+  },
+  "karlsruhe": {
+    "lat": 49.00937,
+    "lng": 8.40444
+  },
+  "bassano del grappa": {
+    "lat": 45.76656,
+    "lng": 11.72739
+  },
+  "scarborough": {
+    "lat": -31.89578,
+    "lng": 115.76431
+  },
+  "weston": {
+    "lat": -35.33582,
+    "lng": 149.05929
+  },
+  "zug": {
+    "lat": 47.17242,
+    "lng": 8.51745
+  },
+  "jupiter": {
+    "lat": 26.93422,
+    "lng": -80.09421
+  },
+  "tianjin": {
+    "lat": 39.14222,
+    "lng": 117.17667
+  },
+  "haridwar": {
+    "lat": 29.94791,
+    "lng": 78.16025
+  },
+  "bristol": {
+    "lat": 51.45523,
+    "lng": -2.59665
+  },
+  "providence": {
+    "lat": -20.24472,
+    "lng": 57.61222
+  },
+  "brisbane": {
+    "lat": -27.46794,
+    "lng": 153.02809
+  },
+  "little rock": {
+    "lat": 34.74648,
+    "lng": -92.28959
+  },
+  "windsor": {
+    "lat": -33.61309,
+    "lng": 150.81416
+  },
+  "montpellier": {
+    "lat": 43.61093,
+    "lng": 3.87635
+  },
+  "melsungen": {
+    "lat": 51.13029,
+    "lng": 9.55236
+  },
+  "hattiesburg": {
+    "lat": 31.32712,
+    "lng": -89.29034
+  },
+  "curitiba": {
+    "lat": -25.42778,
+    "lng": -49.27306
+  },
+  "bogor": {
+    "lat": -6.59444,
+    "lng": 106.78917
+  },
+  "lugano": {
+    "lat": 46.01008,
+    "lng": 8.96004
+  },
+  "laguna beach": {
+    "lat": 30.23965,
+    "lng": -85.9241
+  },
+  "bologna": {
+    "lat": 44.49381,
+    "lng": 11.33875
+  },
+  "idaho falls": {
+    "lat": 43.46658,
+    "lng": -112.03414
+  },
+  "san diego": {
+    "lat": 10.33623,
+    "lng": -73.18203
+  },
+  "dublin": {
+    "lat": 53.33306,
+    "lng": -6.24889
+  },
+  "el paso": {
+    "lat": 9.65724,
+    "lng": -73.74685
+  },
+  "krasnodar": {
+    "lat": 45.04484,
+    "lng": 38.97603
+  },
+  "liestal": {
+    "lat": 47.48455,
+    "lng": 7.73446
+  },
+  "cernusco lombardone": {
+    "lat": 45.69088,
+    "lng": 9.39925
+  },
+  "luzerne": {
+    "lat": 39.99924,
+    "lng": -79.96283
+  },
+  "ankara": {
+    "lat": 39.91987,
+    "lng": 32.85427
+  },
+  "new york city": {
+    "lat": 40.71427,
+    "lng": -74.00597
+  },
+  "thrissur": {
+    "lat": 10.51667,
+    "lng": 76.21667
+  },
+  "putrajaya": {
+    "lat": 2.93527,
+    "lng": 101.69112
+  },
+  "huizhou": {
+    "lat": 23.11147,
+    "lng": 114.41523
+  },
+  "beirut": {
+    "lat": 33.89332,
+    "lng": 35.50157
+  },
+  "gothenburg": {
+    "lat": 40.92945,
+    "lng": -100.16068
+  },
+  "mankato": {
+    "lat": 39.78723,
+    "lng": -98.21005
+  },
+  "selters": {
+    "lat": 50.53253,
+    "lng": 7.75577
+  },
+  "danyang": {
+    "lat": 26.35102,
+    "lng": 119.4803
+  },
+  "s\u00e3o paulo": {
+    "lat": -23.5475,
+    "lng": -46.63611
+  },
+  "brownsville": {
+    "lat": 25.82176,
+    "lng": -80.24116
+  },
+  "berlin": {
+    "lat": 52.52437,
+    "lng": 13.41053
+  },
+  "algiers": {
+    "lat": 36.73225,
+    "lng": 3.08746
+  },
+  "larchmont": {
+    "lat": 40.92788,
+    "lng": -73.7518
+  },
+  "jiaxing": {
+    "lat": 30.7522,
+    "lng": 120.75
+  },
+  "yekaterinburg": {
+    "lat": 56.8519,
+    "lng": 60.6122
+  },
+  "bergisch gladbach": {
+    "lat": 50.9856,
+    "lng": 7.13298
+  },
+  "westmount": {
+    "lat": 45.48341,
+    "lng": -73.59918
+  },
+  "wollerau": {
+    "lat": 47.19478,
+    "lng": 8.71903
+  },
+  "berkeley": {
+    "lat": -34.48333,
+    "lng": 150.85
+  },
+  "arendonk": {
+    "lat": 51.32267,
+    "lng": 5.08289
+  },
+  "amsterdam": {
+    "lat": 52.37403,
+    "lng": 4.88969
+  },
+  "springdale": {
+    "lat": 49.49995,
+    "lng": -56.06492
+  },
+  "neustadt": {
+    "lat": 53.55196,
+    "lng": 9.98558
+  },
+  "taixing": {
+    "lat": 32.16667,
+    "lng": 120.01361
+  },
+  "xingtai": {
+    "lat": 37.06217,
+    "lng": 114.49272
+  },
+  "graz": {
+    "lat": 47.06667,
+    "lng": 15.45
+  },
+  "yanzhou": {
+    "lat": 35.55278,
+    "lng": 116.82861
+  },
+  "kyoto": {
+    "lat": 35.02107,
+    "lng": 135.75385
+  },
+  "ho chi minh city": {
+    "lat": 10.82302,
+    "lng": 106.62965
+  },
+  "rheinfelden": {
+    "lat": 47.55437,
+    "lng": 7.79403
+  },
+  "neuilly-sur-seine": {
+    "lat": 48.8846,
+    "lng": 2.26965
+  },
+  "north york": {
+    "lat": 39.97815,
+    "lng": -76.73302
+  },
+  "brescia": {
+    "lat": 45.53558,
+    "lng": 10.21472
+  },
+  "tbilisi": {
+    "lat": 41.69411,
+    "lng": 44.83368
+  },
+  "kingscourt": {
+    "lat": 53.90806,
+    "lng": -6.80556
+  },
+  "leipzig": {
+    "lat": 51.33962,
+    "lng": 12.37129
+  },
+  "neustadt an der waldnaab": {
+    "lat": 49.73287,
+    "lng": 12.17773
+  },
+  "allendorf": {
+    "lat": 51.02995,
+    "lng": 8.67232
+  },
+  "nyon": {
+    "lat": 46.38318,
+    "lng": 6.23955
+  },
+  "greensboro": {
+    "lat": 32.70415,
+    "lng": -87.5955
+  },
+  "gorinchem": {
+    "lat": 51.83652,
+    "lng": 4.97243
+  },
+  "wuxi": {
+    "lat": 31.56887,
+    "lng": 120.28857
+  },
+  "turin": {
+    "lat": 45.07049,
+    "lng": 7.68682
+  },
+  "zhuji": {
+    "lat": 29.71877,
+    "lng": 120.24233
+  },
+  "nordborg": {
+    "lat": 55.05732,
+    "lng": 9.7408
+  },
+  "lake worth": {
+    "lat": 32.80485,
+    "lng": -97.44502
+  },
+  "nantes": {
+    "lat": 47.21725,
+    "lng": -1.55336
+  },
+  "daejeon": {
+    "lat": 36.34913,
+    "lng": 127.38493
+  },
+  "tarrytown": {
+    "lat": 41.07621,
+    "lng": -73.85875
+  },
+  "provo": {
+    "lat": 40.23384,
+    "lng": -111.65853
+  },
+  "warsaw": {
+    "lat": 52.22977,
+    "lng": 21.01178
+  },
+  "yantai": {
+    "lat": 37.47649,
+    "lng": 121.44081
+  },
+  "ramat hasharon": {
+    "lat": 32.14613,
+    "lng": 34.8394
+  },
+  "ypsilanti": {
+    "lat": 42.24115,
+    "lng": -83.61299
+  },
+  "chaozhou": {
+    "lat": 23.65396,
+    "lng": 116.62262
+  },
+  "cupertino": {
+    "lat": 37.323,
+    "lng": -122.03218
+  },
+  "montabaur": {
+    "lat": 50.43588,
+    "lng": 7.8232
+  },
+  "sarasota": {
+    "lat": 27.33643,
+    "lng": -82.53065
+  },
+  "espelkamp": {
+    "lat": 52.38251,
+    "lng": 8.62127
+  },
+  "weinheim": {
+    "lat": 49.54887,
+    "lng": 8.66697
+  },
+  "manaus": {
+    "lat": -3.10194,
+    "lng": -60.025
+  },
+  "highland park": {
+    "lat": -28.01392,
+    "lng": 153.33312
+  },
+  "nanjing": {
+    "lat": 32.06167,
+    "lng": 118.77778
+  },
+  "arcore": {
+    "lat": 45.62675,
+    "lng": 9.32454
+  },
+  "jiujiang": {
+    "lat": 29.70475,
+    "lng": 116.00206
+  },
+  "lima": {
+    "lat": -12.04318,
+    "lng": -77.02824
+  },
+  "key largo": {
+    "lat": 25.08652,
+    "lng": -80.44728
+  },
+  "minnetonka": {
+    "lat": 44.9133,
+    "lng": -93.50329
+  },
+  "erkerode": {
+    "lat": 52.20485,
+    "lng": 10.70982
+  },
+  "rennes": {
+    "lat": 48.11198,
+    "lng": -1.67429
+  },
+  "bellevue": {
+    "lat": -31.90116,
+    "lng": 116.02762
+  },
+  "darmstadt": {
+    "lat": 49.87167,
+    "lng": 8.65027
+  },
+  "yingkou": {
+    "lat": 40.66472,
+    "lng": 122.23176
+  },
+  "jeddah": {
+    "lat": 21.49012,
+    "lng": 39.18624
+  },
+  "bergamo": {
+    "lat": 45.69601,
+    "lng": 9.66721
+  },
+  "portland": {
+    "lat": -38.3462,
+    "lng": 141.60257
+  },
+  "hillsborough": {
+    "lat": 54.46345,
+    "lng": -6.07664
+  },
+  "putian": {
+    "lat": 25.43944,
+    "lng": 119.01028
+  },
+  "kaliningrad": {
+    "lat": 54.70649,
+    "lng": 20.51095
+  },
+  "norwich": {
+    "lat": 52.62783,
+    "lng": 1.29834
+  },
+  "helsinki": {
+    "lat": 60.16952,
+    "lng": 24.93545
+  },
+  "dar es salaam": {
+    "lat": -6.82349,
+    "lng": 39.26951
+  },
+  "porto alegre": {
+    "lat": -30.03283,
+    "lng": -51.23019
+  },
+  "jinhua": {
+    "lat": 26.538,
+    "lng": 99.91715
+  },
+  "stellenbosch": {
+    "lat": -33.93462,
+    "lng": 18.86676
+  },
+  "luohe": {
+    "lat": 33.56394,
+    "lng": 114.04272
+  },
+  "ottawa": {
+    "lat": 45.41117,
+    "lng": -75.69812
+  },
+  "kanazawa": {
+    "lat": 36.6,
+    "lng": 136.61667
+  },
+  "alpine": {
+    "lat": 40.95593,
+    "lng": -73.93125
+  },
+  "northeim": {
+    "lat": 51.70662,
+    "lng": 9.99997
+  },
+  "kazan": {
+    "lat": 55.78874,
+    "lng": 49.12214
+  },
+  "wiesloch": {
+    "lat": 49.29504,
+    "lng": 8.69846
+  },
+  "xinxiang": {
+    "lat": 35.19033,
+    "lng": 113.80151
+  },
+  "nyack": {
+    "lat": 41.09065,
+    "lng": -73.91791
+  },
+  "miamisburg": {
+    "lat": 39.64284,
+    "lng": -84.28661
+  },
+  "durham": {
+    "lat": 54.77676,
+    "lng": -1.57566
+  },
+  "schwieberdingen": {
+    "lat": 48.87644,
+    "lng": 9.07439
+  },
+  "indian hills": {
+    "lat": 38.27257,
+    "lng": -85.66274
+  },
+  "murmansk": {
+    "lat": 68.97398,
+    "lng": 33.09747
+  },
+  "sioux falls": {
+    "lat": 43.54997,
+    "lng": -96.70033
+  },
+  "chelyabinsk": {
+    "lat": 55.15402,
+    "lng": 61.42915
+  },
+  "bucharest": {
+    "lat": 44.43225,
+    "lng": 26.10626
+  },
+  "fukuoka": {
+    "lat": 33.6,
+    "lng": 130.41667
+  },
+  "shelburne": {
+    "lat": 43.76325,
+    "lng": -65.32355
+  },
+  "luancheng": {
+    "lat": 37.88452,
+    "lng": 114.64629
+  },
+  "kathmandu": {
+    "lat": 27.70169,
+    "lng": 85.3206
+  },
+  "cut off": {
+    "lat": 29.54272,
+    "lng": -90.33814
+  },
+  "brusque": {
+    "lat": -27.09795,
+    "lng": -48.91281
+  },
+  "bratislava": {
+    "lat": 48.14816,
+    "lng": 17.10674
+  },
+  "monsey": {
+    "lat": 41.11121,
+    "lng": -74.06848
+  },
+  "audubon": {
+    "lat": 39.89095,
+    "lng": -75.07295
+  },
+  "new canaan": {
+    "lat": 41.14676,
+    "lng": -73.49484
+  },
+  "yixing": {
+    "lat": 31.36059,
+    "lng": 119.82016
+  },
+  "surabaya": {
+    "lat": -7.24917,
+    "lng": 112.75083
+  },
+  "cedar grove": {
+    "lat": -27.86667,
+    "lng": 152.98333
+  },
+  "zhaoyuan": {
+    "lat": 37.36497,
+    "lng": 120.40997
+  },
+  "cisco": {
+    "lat": 32.38819,
+    "lng": -98.97923
+  },
+  "aberdeen": {
+    "lat": -32.16588,
+    "lng": 150.89003
+  },
+  "shijiazhuang": {
+    "lat": 38.04139,
+    "lng": 114.47861
+  },
+  "muscat": {
+    "lat": 23.58413,
+    "lng": 58.40778
+  },
+  "shangyu": {
+    "lat": 30.01556,
+    "lng": 120.87111
+  },
+  "segrate": {
+    "lat": 45.49185,
+    "lng": 9.29812
+  },
+  "annapolis": {
+    "lat": 38.97859,
+    "lng": -76.49184
+  },
+  "mysore": {
+    "lat": 12.29791,
+    "lng": 76.63925
+  },
+  "xiamen": {
+    "lat": 24.47979,
+    "lng": 118.08187
+  },
+  "kottayam": {
+    "lat": 9.58692,
+    "lng": 76.52132
+  },
+  "el cerrito": {
+    "lat": 3.68549,
+    "lng": -76.31372
+  },
+  "daye": {
+    "lat": 30.08333,
+    "lng": 114.95
+  },
+  "gaomi": {
+    "lat": 36.38333,
+    "lng": 119.75278
+  },
+  "rutland": {
+    "lat": 42.36954,
+    "lng": -71.94813
+  },
+  "budapest": {
+    "lat": 47.49835,
+    "lng": 19.04045
+  },
+  "hod hasharon": {
+    "lat": 32.15934,
+    "lng": 34.8932
+  },
+  "blaricum": {
+    "lat": 52.2725,
+    "lng": 5.24167
+  },
+  "landshut": {
+    "lat": 48.52961,
+    "lng": 12.16179
+  },
+  "surfers paradise": {
+    "lat": -28.00274,
+    "lng": 153.42999
+  },
+  "boucherville": {
+    "lat": 45.59104,
+    "lng": -73.43605
+  },
+  "daytona beach": {
+    "lat": 29.21081,
+    "lng": -81.02283
+  },
+  "shantou": {
+    "lat": 23.35489,
+    "lng": 116.67876
+  },
+  "st. paul": {
+    "lat": 53.98347,
+    "lng": -111.28507
+  },
+  "cieszyn": {
+    "lat": 49.75133,
+    "lng": 18.63213
+  },
+  "taichung": {
+    "lat": 24.1469,
+    "lng": 120.6839
+  },
+  "princeton": {
+    "lat": 49.45802,
+    "lng": -120.51076
+  },
+  "landsberg am lech": {
+    "lat": 48.04819,
+    "lng": 10.88282
+  },
+  "landsberg": {
+    "lat": 51.52698,
+    "lng": 12.16076
+  },
+  "bielefeld": {
+    "lat": 52.03333,
+    "lng": 8.53333
+  },
+  "nicosia": {
+    "lat": 35.17531,
+    "lng": 33.3642
+  },
+  "edmond": {
+    "lat": 35.65283,
+    "lng": -97.4781
+  },
+  "gaildorf": {
+    "lat": 49.00027,
+    "lng": 9.76953
+  },
+  "kfar shmaryahu": {
+    "lat": 32.18529,
+    "lng": 34.82082
+  },
+  "san juan": {
+    "lat": -31.53726,
+    "lng": -68.52568
+  },
+  "flagstaff": {
+    "lat": 35.19807,
+    "lng": -111.65127
+  },
+  "tombolo": {
+    "lat": 45.63916,
+    "lng": 11.82435
+  },
+  "cesena": {
+    "lat": 44.1391,
+    "lng": 12.24315
+  },
+  "cremona": {
+    "lat": 45.13325,
+    "lng": 10.02129
+  },
+  "albuquerque": {
+    "lat": 35.08449,
+    "lng": -106.65114
+  },
+  "barcelona": {
+    "lat": 41.38879,
+    "lng": 2.15899
+  },
+  "pujols": {
+    "lat": 44.39424,
+    "lng": 0.6881
+  },
+  "rochester": {
+    "lat": -36.36352,
+    "lng": 144.70077
+  },
+  "kearney": {
+    "lat": 39.36778,
+    "lng": -94.36217
+  },
+  "wellington": {
+    "lat": -32.55588,
+    "lng": 148.94508
+  },
+  "locust valley": {
+    "lat": 40.87593,
+    "lng": -73.59707
+  },
+  "hidden hills": {
+    "lat": 34.16028,
+    "lng": -118.65231
+  },
+  "aspen": {
+    "lat": 39.1911,
+    "lng": -106.81754
+  },
+  "rauma": {
+    "lat": 61.12724,
+    "lng": 21.51127
+  },
+  "glenview": {
+    "lat": -26.76667,
+    "lng": 153.01667
+  },
+  "xinyu": {
+    "lat": 27.83906,
+    "lng": 114.84591
+  },
+  "helsingborg": {
+    "lat": 56.04673,
+    "lng": 12.69437
+  },
+  "oranienburg": {
+    "lat": 52.75577,
+    "lng": 13.24197
+  },
+  "tolleson": {
+    "lat": 33.45004,
+    "lng": -112.25932
+  },
+  "saitama": {
+    "lat": 35.90807,
+    "lng": 139.65657
+  },
+  "paoli": {
+    "lat": 38.55617,
+    "lng": -86.46832
+  },
+  "harbin": {
+    "lat": 45.75,
+    "lng": 126.65
+  },
+  "campodoro": {
+    "lat": 45.48947,
+    "lng": 11.75268
+  },
+  "casablanca": {
+    "lat": 23.14292,
+    "lng": -82.3399
+  },
+  "duluth": {
+    "lat": 34.00288,
+    "lng": -84.14464
+  },
+  "zhuhai": {
+    "lat": 22.27694,
+    "lng": 113.56778
+  },
+  "cardiff": {
+    "lat": -32.94201,
+    "lng": 151.6544
+  },
+  "zapopan": {
+    "lat": 20.72356,
+    "lng": -103.38479
+  },
+  "bovenden": {
+    "lat": 51.58836,
+    "lng": 9.9222
+  },
+  "rottendorf": {
+    "lat": 49.7923,
+    "lng": 10.02593
+  },
+  "montagnola": {
+    "lat": 45.98323,
+    "lng": 8.91786
+  },
+  "limassol": {
+    "lat": 34.68406,
+    "lng": 33.03794
+  },
+  "iphofen": {
+    "lat": 49.70239,
+    "lng": 10.26037
+  },
+  "matadepera": {
+    "lat": 41.59886,
+    "lng": 2.02648
+  },
+  "linyi": {
+    "lat": 35.06306,
+    "lng": 118.34278
+  },
+  "spilamberto": {
+    "lat": 44.53273,
+    "lng": 11.01697
+  },
+  "bedford": {
+    "lat": -31.91132,
+    "lng": 115.8892
+  },
+  "nicasio": {
+    "lat": -15.2356,
+    "lng": -70.26094
+  },
+  "windermere": {
+    "lat": 54.38086,
+    "lng": -2.90709
+  },
+  "gallatin": {
+    "lat": 39.91445,
+    "lng": -93.96217
+  },
+  "carson city": {
+    "lat": 43.17698,
+    "lng": -84.84639
+  },
+  "lendelede": {
+    "lat": 50.88626,
+    "lng": 3.23747
+  },
+  "shenyang": {
+    "lat": 41.79222,
+    "lng": 123.43278
+  },
+  "yorktown heights": {
+    "lat": 41.27093,
+    "lng": -73.77763
+  },
+  "urayasu": {
+    "lat": 35.65879,
+    "lng": 139.90055
+  },
+  "vladivostok": {
+    "lat": 43.10562,
+    "lng": 131.87353
+  },
+  "midland": {
+    "lat": -31.88909,
+    "lng": 116.0107
+  },
+  "monte vista": {
+    "lat": 37.57917,
+    "lng": -106.14808
+  },
+  "shunde": {
+    "lat": 22.80087,
+    "lng": 113.29208
+  },
+  "wolfenb\u00fcttel": {
+    "lat": 52.16442,
+    "lng": 10.54095
+  },
+  "liberty": {
+    "lat": 10.87417,
+    "lng": 125.0025
+  },
+  "bnei brak": {
+    "lat": 32.08074,
+    "lng": 34.8338
+  },
+  "raleigh": {
+    "lat": 32.03349,
+    "lng": -89.52229
+  },
+  "easton": {
+    "lat": 50.53333,
+    "lng": -2.45
+  },
+  "stanford": {
+    "lat": 37.53119,
+    "lng": -84.66189
+  },
+  "lanzhou": {
+    "lat": 36.05701,
+    "lng": 103.83987
+  },
+  "panzhihua": {
+    "lat": 26.58509,
+    "lng": 101.71276
+  },
+  "chiba": {
+    "lat": 33.64657,
+    "lng": 104.78224
+  },
+  "vadodara": {
+    "lat": 22.29941,
+    "lng": 73.20812
+  },
+  "belo horizonte": {
+    "lat": -19.92083,
+    "lng": -43.93778
+  },
+  "lake mary": {
+    "lat": 28.75888,
+    "lng": -81.31784
+  },
+  "manama": {
+    "lat": 26.22787,
+    "lng": 50.58565
+  },
+  "concord": {
+    "lat": -33.84722,
+    "lng": 151.10381
+  },
+  "abbeville": {
+    "lat": 50.10521,
+    "lng": 1.83547
+  },
+  "heshan": {
+    "lat": 28.56938,
+    "lng": 112.34733
+  },
+  "sacramento": {
+    "lat": -19.86528,
+    "lng": -47.44
+  },
+  "burgebrach": {
+    "lat": 49.82832,
+    "lng": 10.74338
+  },
+  "les escaldes": {
+    "lat": 42.50729,
+    "lng": 1.53414
+  },
+  "krefeld": {
+    "lat": 51.33645,
+    "lng": 6.55381
+  },
+  "florian\u00f3polis": {
+    "lat": -27.59667,
+    "lng": -48.54917
+  },
+  "detmold": {
+    "lat": 51.93855,
+    "lng": 8.87318
+  },
+  "jacksonville": {
+    "lat": 33.81382,
+    "lng": -85.7613
+  },
+  "macherio": {
+    "lat": 45.63974,
+    "lng": 9.27394
+  },
+  "surgut": {
+    "lat": 53.92498,
+    "lng": 51.20348
+  },
+  "kobe": {
+    "lat": 34.6913,
+    "lng": 135.183
+  },
+  "tainan": {
+    "lat": 22.99083,
+    "lng": 120.21333
+  },
+  "yangzhou": {
+    "lat": 32.39722,
+    "lng": 119.43583
+  },
+  "balikpapan": {
+    "lat": -1.26753,
+    "lng": 116.82887
+  },
+  "chattanooga": {
+    "lat": 35.04563,
+    "lng": -85.30968
+  },
+  "boulder": {
+    "lat": -30.78204,
+    "lng": 121.4912
+  },
+  "plymouth": {
+    "lat": 50.37153,
+    "lng": -4.14305
+  },
+  "orono": {
+    "lat": 44.88312,
+    "lng": -68.67198
+  },
+  "englewood": {
+    "lat": 26.96201,
+    "lng": -82.3526
+  },
+  "tirana": {
+    "lat": 41.3275,
+    "lng": 19.81889
+  },
+  "crocetta del montello": {
+    "lat": 45.83667,
+    "lng": 12.03361
+  },
+  "kemerovo": {
+    "lat": 55.33333,
+    "lng": 86.08333
+  },
+  "gold coast": {
+    "lat": -28.00029,
+    "lng": 153.43088
+  },
+  "jinjiang": {
+    "lat": 24.81978,
+    "lng": 118.57415
+  },
+  "hengshui": {
+    "lat": 37.73908,
+    "lng": 115.68348
+  },
+  "lens": {
+    "lat": 50.55696,
+    "lng": 3.89946
+  },
+  "straelen": {
+    "lat": 51.4419,
+    "lng": 6.26639
+  },
+  "weihai": {
+    "lat": 37.50914,
+    "lng": 122.11356
+  },
+  "kochi": {
+    "lat": 9.93988,
+    "lng": 76.26022
+  },
+  "huzhou": {
+    "lat": 30.8703,
+    "lng": 120.0933
+  },
+  "new delhi": {
+    "lat": 28.62137,
+    "lng": 77.2148
+  },
+  "changchun": {
+    "lat": 43.88,
+    "lng": 125.32278
+  },
+  "santa monica": {
+    "lat": -27.59137,
+    "lng": -48.50756
+  },
+  "chestnut hill": {
+    "lat": 42.33065,
+    "lng": -71.16616
+  },
+  "bj\u00e4rred": {
+    "lat": 55.71667,
+    "lng": 13.01667
+  },
+  "mount kisco": {
+    "lat": 41.20426,
+    "lng": -73.72708
+  },
+  "wuhu": {
+    "lat": 31.35259,
+    "lng": 118.42947
+  },
+  "vaduz": {
+    "lat": 47.14151,
+    "lng": 9.52154
+  },
+  "dongguan": {
+    "lat": 39.01732,
+    "lng": 111.12674
+  },
+  "zhuzhou": {
+    "lat": 27.83333,
+    "lng": 113.15
+  },
+  "san carlos": {
+    "lat": -27.74706,
+    "lng": -55.89639
+  },
+  "surat": {
+    "lat": 21.19594,
+    "lng": 72.83023
+  },
+  "netivot": {
+    "lat": 31.42305,
+    "lng": 34.58911
+  },
+  "potsdam": {
+    "lat": 52.39886,
+    "lng": 13.06566
+  },
+  "pekanbaru": {
+    "lat": 0.51667,
+    "lng": 101.44167
+  },
+  "belvedere": {
+    "lat": 51.49114,
+    "lng": 0.15136
+  },
+  "nanping": {
+    "lat": 29.08639,
+    "lng": 106.98722
+  },
+  "baar": {
+    "lat": 47.19625,
+    "lng": 8.52954
+  },
+  "ludvika": {
+    "lat": 60.14959,
+    "lng": 15.18776
+  },
+  "joplin": {
+    "lat": 37.08423,
+    "lng": -94.51328
+  },
+  "arlington": {
+    "lat": 31.4399,
+    "lng": -84.72492
+  },
+  "pacifica": {
+    "lat": 37.61383,
+    "lng": -122.48692
+  },
+  "w\u00fcrzburg": {
+    "lat": 49.79391,
+    "lng": 9.95121
+  },
+  "meerbusch": {
+    "lat": 51.25268,
+    "lng": 6.68807
+  },
+  "yuxi": {
+    "lat": 24.355,
+    "lng": 102.54222
+  },
+  "cleveland": {
+    "lat": -27.52677,
+    "lng": 153.26516
+  },
+  "nanning": {
+    "lat": 22.81667,
+    "lng": 108.31667
+  },
+  "chifeng": {
+    "lat": 42.26833,
+    "lng": 118.96361
+  },
+  "paphos": {
+    "lat": 34.77679,
+    "lng": 32.42451
+  },
+  "bradenton": {
+    "lat": 27.49893,
+    "lng": -82.57482
+  },
+  "jonesboro": {
+    "lat": 35.8423,
+    "lng": -90.70428
+  },
+  "colts neck": {
+    "lat": 40.28761,
+    "lng": -74.17237
+  },
+  "mandaluyong city": {
+    "lat": 14.5832,
+    "lng": 121.0409
+  },
+  "fargo": {
+    "lat": 46.87719,
+    "lng": -96.7898
+  },
+  "bogart": {
+    "lat": 33.94928,
+    "lng": -83.53461
+  },
+  "baarn": {
+    "lat": 52.21167,
+    "lng": 5.2875
+  },
+  "montecito": {
+    "lat": 34.43666,
+    "lng": -119.63208
+  },
+  "big sky": {
+    "lat": 45.28465,
+    "lng": -111.36829
+  },
+  "yongzhou": {
+    "lat": 26.42389,
+    "lng": 111.61306
+  },
+  "jinan": {
+    "lat": 36.66833,
+    "lng": 116.99722
+  },
+  "great falls": {
+    "lat": 34.57514,
+    "lng": -80.90202
+  },
+  "lincoln": {
+    "lat": -34.86819,
+    "lng": -61.52929
+  },
+  "rhinebeck": {
+    "lat": 41.92676,
+    "lng": -73.91264
+  },
+  "leshan": {
+    "lat": 29.56227,
+    "lng": 103.76386
+  },
+  "kunming": {
+    "lat": 25.03889,
+    "lng": 102.71833
+  },
+  "key west": {
+    "lat": 24.55524,
+    "lng": -81.78163
+  },
+  "taizhou": {
+    "lat": 32.49069,
+    "lng": 119.90812
+  },
+  "tervuren": {
+    "lat": 50.82372,
+    "lng": 4.51418
+  },
+  "burlington": {
+    "lat": 43.38621,
+    "lng": -79.83713
+  },
+  "haikou": {
+    "lat": 24.77985,
+    "lng": 102.57548
+  },
+  "gibsonia": {
+    "lat": 28.11474,
+    "lng": -81.97369
+  },
+  "malvern": {
+    "lat": -37.86259,
+    "lng": 145.02811
+  },
+  "satellite beach": {
+    "lat": 28.17612,
+    "lng": -80.59005
+  },
+  "lowell": {
+    "lat": 36.25535,
+    "lng": -94.13076
+  },
+  "rye": {
+    "lat": -38.38528,
+    "lng": 144.81221
+  },
+  "waiblingen": {
+    "lat": 48.83241,
+    "lng": 9.31641
+  },
+  "media": {
+    "lat": 39.91678,
+    "lng": -75.38769
+  },
+  "rheda-wiedenbr\u00fcck": {
+    "lat": 51.84967,
+    "lng": 8.30017
+  },
+  "tonghua": {
+    "lat": 41.71972,
+    "lng": 125.92639
+  },
+  "faridabad": {
+    "lat": 28.41124,
+    "lng": 77.31316
+  },
+  "oyster bay": {
+    "lat": -34.00407,
+    "lng": 151.07588
+  },
+  "winchester": {
+    "lat": 45.0834,
+    "lng": -75.34933
+  },
+  "charlotte": {
+    "lat": 35.22709,
+    "lng": -80.84313
+  },
+  "copenhagen": {
+    "lat": 55.67594,
+    "lng": 12.56553
+  },
+  "mountain green": {
+    "lat": 41.143,
+    "lng": -111.7916
+  },
+  "gr\u00e4felfing": {
+    "lat": 48.11878,
+    "lng": 11.42939
+  },
+  "nantong": {
+    "lat": 32.03028,
+    "lng": 120.87472
+  },
+  "oakville": {
+    "lat": -33.61558,
+    "lng": 150.88006
+  },
+  "mercer island": {
+    "lat": 47.57065,
+    "lng": -122.22207
+  },
+  "lutherville-timonium": {
+    "lat": 39.43997,
+    "lng": -76.61099
+  },
+  "columbus": {
+    "lat": 32.46098,
+    "lng": -84.98771
+  },
+  "chrostnik": {
+    "lat": 51.355548,
+    "lng": 16.157323
+  },
+  "bellawongarah": {
+    "lat": -34.7592151,
+    "lng": 150.6149612
+  },
+  "old lyme": {
+    "lat": 41.3162517,
+    "lng": -72.3296192
+  },
+  "selangor": {
+    "lat": 3.2083304,
+    "lng": 101.304146
+  },
+  "aurangabad": {
+    "lat": 19.877263,
+    "lng": 75.3390241
+  },
+  "anzere": {
+    "lat": 51.925398,
+    "lng": 4.5894744
+  },
+  "santo andre": {
+    "lat": -23.6533509,
+    "lng": -46.5279039
+  },
+  "humlebaek": {
+    "lat": 55.9618789,
+    "lng": 12.5305462
+  },
+  "yunlin": {
+    "lat": 23.6990775,
+    "lng": 120.5245511
+  },
+  "solomeo": {
+    "lat": 43.0830922,
+    "lng": 12.2772146
+  },
+  "shalden": {
+    "lat": 51.1744555,
+    "lng": -0.9961017
+  },
+  "north salem": {
+    "lat": 41.3348169,
+    "lng": -73.5712374
+  },
+  "trivandrum": {
+    "lat": 8.4882267,
+    "lng": 76.947551
+  },
+  "baroda": {
+    "lat": 22.2973142,
+    "lng": 73.1942567
+  },
+  "sant'' elpidio a mare": {
+    "lat": 43.2347405,
+    "lng": 13.6878517
+  },
+  "moscow region": {
+    "lat": 10.4327323,
+    "lng": 45.0104807
+  },
+  "saint-denis-bovesse": {
+    "lat": 50.5213237,
+    "lng": 4.7680257
+  },
+  "jupiter island": {
+    "lat": 27.03419,
+    "lng": -80.1035822
+  },
+  "vettre": {
+    "lat": 59.8239244,
+    "lng": 10.4662329
+  },
+  "new dehli": {
+    "lat": 41.9025647,
+    "lng": 12.5053401
+  },
+  "manalapan": {
+    "lat": 26.5692364,
+    "lng": -80.0447635
+  },
+  "st. wendel": {
+    "lat": 49.4669906,
+    "lng": 7.1696192
+  },
+  "geyserville": {
+    "lat": 38.707687,
+    "lng": -122.902496
+  },
+  "bayannur": {
+    "lat": 41.569576,
+    "lng": 107.494851
+  },
+  "grijo": {
+    "lat": 41.5027019,
+    "lng": -6.9761157
+  },
+  "marburg": {
+    "lat": 50.8090106,
+    "lng": 8.7704695
+  },
+  "longkou": {
+    "lat": 37.6443474,
+    "lng": 120.4708629
+  },
+  "kverva": {
+    "lat": 63.7054863,
+    "lng": 8.529964
+  },
+  "kernen": {
+    "lat": 48.7965338,
+    "lng": 9.3286487
+  },
+  "lipperswil": {
+    "lat": 47.6158599,
+    "lng": 9.0562291
+  },
+  "wilen": {
+    "lat": 47.451714,
+    "lng": 9.0341561
+  },
+  "torino": {
+    "lat": 45.0677551,
+    "lng": 7.6824892
+  },
+  "east lyme": {
+    "lat": 41.3482141,
+    "lng": -72.2092951
+  },
+  "kauai": {
+    "lat": 22.0503838,
+    "lng": -159.5588624
+  },
+  "montreal": {
+    "lat": 45.5031824,
+    "lng": -73.5698065
+  },
+  "necker island": {
+    "lat": 23.5764796,
+    "lng": -164.7047212
+  },
+  "urumqi": {
+    "lat": 43.8244074,
+    "lng": 87.6139038
+  },
+  "erevan": {
+    "lat": 40.1777112,
+    "lng": 44.5126233
+  },
+  "bikaner": {
+    "lat": 28.0159286,
+    "lng": 73.3171367
+  },
+  "culiacan": {
+    "lat": 24.7978965,
+    "lng": -107.393395
+  },
+  "new south wales": {
+    "lat": -31.8759835,
+    "lng": 147.2869493
+  },
+  "gloucestershire": {
+    "lat": 51.7643786,
+    "lng": -2.1880662
+  },
+  "merseyside": {
+    "lat": 53.4953602,
+    "lng": -2.973938
+  },
+  "gothenberg": {
+    "lat": 46.8674223,
+    "lng": -92.1268568
+  },
+  "kitzbuhel": {
+    "lat": 47.4463585,
+    "lng": 12.3911473
+  },
+  "bat-yam": {
+    "lat": 32.0154565,
+    "lng": 34.7505283
+  },
+  "chang hwa county": {
+    "lat": 34.0621934,
+    "lng": -118.2977168
+  },
+  "st. john": {
+    "lat": 18.3356013,
+    "lng": -64.7550406
+  },
+  "kanton schwyz": {
+    "lat": 47.0571976,
+    "lng": 8.7222073
+  },
+  "isle of man": {
+    "lat": 54.2359207,
+    "lng": -4.5147669
+  },
+  "kiev": {
+    "lat": 50.4500336,
+    "lng": 30.5241361
+  },
+  "rostov-on-don": {
+    "lat": 47.2610441,
+    "lng": 39.7249086
+  },
+  "hurden": {
+    "lat": 47.2142501,
+    "lng": 8.8043485
+  },
+  "ruschlikon": {
+    "lat": 47.307465,
+    "lng": 8.5546421
+  },
+  "xi'an": {
+    "lat": 34.261004,
+    "lng": 108.9423363
+  },
+  "rajkot": {
+    "lat": 22.3053263,
+    "lng": 70.8028377
+  },
+  "paralimni": {
+    "lat": 35.0391526,
+    "lng": 33.9828013
+  },
+  "san juan islands": {
+    "lat": 48.537089,
+    "lng": -123.0907204
+  },
+  "felcs\u00fat": {
+    "lat": 47.4545349,
+    "lng": 18.5862386
+  },
+  "qidong": {
+    "lat": 31.7951489,
+    "lng": 121.6509342
+  },
+  "st. gallen": {
+    "lat": 47.425618,
+    "lng": 9.3762397
+  },
+  "ezulwini": {
+    "lat": -26.4018193,
+    "lng": 31.178316
+  },
+  "cochin": {
+    "lat": 9.9679032,
+    "lng": 76.2444378
+  },
+  "liuan": {
+    "lat": 17.8169183,
+    "lng": 121.4500849
+  },
+  "monkton": {
+    "lat": 50.8215799,
+    "lng": -3.1547332
+  },
+  "klaugi": {
+    "lat": 56.8712701,
+    "lng": 25.8983647
+  },
+  "ponzano veneto": {
+    "lat": 45.723851,
+    "lng": 12.194218
+  },
+  "ober\u00e4geri": {
+    "lat": 47.1347395,
+    "lng": 8.6132732
+  },
+  "sao luis": {
+    "lat": -2.5295265,
+    "lng": -44.2963942
+  },
+  "london, suffolk": {
+    "lat": 52.1627718,
+    "lng": 0.9960257
+  },
+  "ernakulam": {
+    "lat": 10.0383947,
+    "lng": 76.5074145
+  },
+  "crans montana": {
+    "lat": 46.3069171,
+    "lng": 7.469015
+  },
+  "bacau": {
+    "lat": 46.5560493,
+    "lng": 26.9153557
+  },
+  "wilen bei wollerau": {
+    "lat": 47.1976358,
+    "lng": 8.7343815
+  },
+  "konstancin": {
+    "lat": 52.0941864,
+    "lng": 19.3486177
+  },
+  "paradise island": {
+    "lat": 25.0833552,
+    "lng": -77.3063342
+  },
+  "cesk\u00fd sternberk": {
+    "lat": 49.8108883,
+    "lng": 14.9281503
+  },
+  "herzliya pituach": {
+    "lat": 32.1739444,
+    "lng": 34.8081804
+  },
+  "fisher island": {
+    "lat": 25.7598356,
+    "lng": -80.1400384
+  },
+  "dusseldorf": {
+    "lat": 51.2254018,
+    "lng": 6.7763137
+  },
+  "hertfordshire": {
+    "lat": 51.8400523,
+    "lng": -0.0978552
+  },
+  "lower merion": {
+    "lat": 39.9975379,
+    "lng": -75.2516078
+  },
+  "rechterfeld": {
+    "lat": 52.8422565,
+    "lng": 8.3847971
+  },
+  "bnei atarot": {
+    "lat": 32.0235637,
+    "lng": 34.9118719
+  },
+  "xian": {
+    "lat": 38.1904931,
+    "lng": 116.1191021
+  },
+  "jeju": {
+    "lat": 33.4887737,
+    "lng": 126.4987083
+  },
+  "rondonopolis": {
+    "lat": -16.4603533,
+    "lng": -54.6397099
+  },
+  "gerpinnes": {
+    "lat": 50.3470877,
+    "lng": 4.5276252
+  },
+  "nottinghamshire": {
+    "lat": 53.1459288,
+    "lng": -1.0214971
+  },
+  "braine l'alleud": {
+    "lat": 50.6828722,
+    "lng": 4.3692706
+  },
+  "palisades": {
+    "lat": 41.0182822,
+    "lng": -73.9163697
+  },
+  "bangalore": {
+    "lat": 12.9767936,
+    "lng": 77.590082
+  },
+  "hokkaido": {
+    "lat": 43.4519831,
+    "lng": 142.8197834
+  },
+  "yokohama city": {
+    "lat": 40.9844586,
+    "lng": -73.8516398
+  },
+  "ohningen": {
+    "lat": 47.6617131,
+    "lng": 8.8873571
+  },
+  "ludhiana": {
+    "lat": 30.9090157,
+    "lng": 75.851601
+  },
+  "sao jose dos pinhais": {
+    "lat": -25.533816,
+    "lng": -49.2072163
+  },
+  "aarhus": {
+    "lat": 56.1496278,
+    "lng": 10.2134046
+  },
+  "lower-saxony": {
+    "lat": 52.8398531,
+    "lng": 9.075962
+  },
+  "st. brelade, jersey": {
+    "lat": 49.1851256,
+    "lng": -2.2010341
+  },
+  "saint moritz": {
+    "lat": 46.4978958,
+    "lng": 9.8392428
+  },
+  "sao paulo": {
+    "lat": -23.5506507,
+    "lng": -46.6333824
+  },
+  "peyia": {
+    "lat": 34.8835052,
+    "lng": 32.3803202
+  },
+  "newbury park": {
+    "lat": 51.5754985,
+    "lng": 0.0899693
+  },
+  "ingelheim": {
+    "lat": 49.9752749,
+    "lng": 8.0547274
+  },
+  "turks and caicos islands": {
+    "lat": 21.721746,
+    "lng": -71.5527809
+  },
+  "marin county": {
+    "lat": 38.0409144,
+    "lng": -122.6199638
+  },
+  "thurgau": {
+    "lat": 47.5859649,
+    "lng": 9.1428769
+  },
+  "grand cayman": {
+    "lat": 19.3298472,
+    "lng": -81.1712216
+  },
+  "st. peter port": {
+    "lat": 49.4568142,
+    "lng": -2.5389979
+  },
+  "wroclaw": {
+    "lat": 51.1089776,
+    "lng": 17.0326689
+  },
+  "aberdyfi": {
+    "lat": 52.5451248,
+    "lng": -4.0533624
+  },
+  "mevaseret zion": {
+    "lat": 31.8039508,
+    "lng": 35.1570251
+  },
+  "gurgaon": {
+    "lat": 28.4646148,
+    "lng": 77.0299194
+  },
+  "tawau, sabah": {
+    "lat": 4.2435206,
+    "lng": 117.885331
+  }
+}

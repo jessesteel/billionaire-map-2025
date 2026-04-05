@@ -1,0 +1,1570 @@
+{
+  "Berkshire Hathaway": [
+    {
+      "name": "Apple",
+      "lat": 37.323,
+      "lng": -122.0322,
+      "industry": "Consumer Electronics"
+    },
+    {
+      "name": "Bank of America",
+      "lat": 35.2271,
+      "lng": -80.8431,
+      "industry": "Banking"
+    },
+    {
+      "name": "American Express",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "industry": "Financial Services"
+    },
+    {
+      "name": "Coca-Cola",
+      "lat": 33.749,
+      "lng": -84.388,
+      "industry": "Beverages"
+    },
+    {
+      "name": "Chevron",
+      "lat": 37.7648,
+      "lng": -121.9544,
+      "industry": "Energy"
+    }
+  ],
+  "Berkshire Hathaway Inc. (Cl A)": [
+    {
+      "name": "Apple",
+      "lat": 37.323,
+      "lng": -122.0322,
+      "industry": "Consumer Electronics"
+    },
+    {
+      "name": "Bank of America",
+      "lat": 35.2271,
+      "lng": -80.8431,
+      "industry": "Banking"
+    },
+    {
+      "name": "American Express",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "industry": "Financial Services"
+    },
+    {
+      "name": "Coca-Cola",
+      "lat": 33.749,
+      "lng": -84.388,
+      "industry": "Beverages"
+    },
+    {
+      "name": "Geico",
+      "lat": 38.9616,
+      "lng": -77.0877,
+      "industry": "Insurance"
+    },
+    {
+      "name": "BNSF Railway",
+      "lat": 32.8251,
+      "lng": -97.3117,
+      "industry": "Rail Freight"
+    }
+  ],
+  "Alphabet": [
+    {
+      "name": "Google",
+      "lat": 37.3861,
+      "lng": -122.0839,
+      "industry": "Search & Advertising"
+    },
+    {
+      "name": "YouTube",
+      "lat": 37.6305,
+      "lng": -122.4111,
+      "industry": "Video Platform"
+    },
+    {
+      "name": "DeepMind",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "industry": "Artificial Intelligence"
+    },
+    {
+      "name": "Waymo",
+      "lat": 37.403,
+      "lng": -122.085,
+      "industry": "Autonomous Vehicles"
+    }
+  ],
+  "LVMH Moet Hennessy Louis Vuitton": [
+    {
+      "name": "Louis Vuitton",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "industry": "Luxury Fashion"
+    },
+    {
+      "name": "Christian Dior",
+      "lat": 48.8667,
+      "lng": 2.3021,
+      "industry": "High Fashion"
+    },
+    {
+      "name": "Tiffany & Co.",
+      "lat": 40.7624,
+      "lng": -73.9738,
+      "industry": "Luxury Jewelry"
+    },
+    {
+      "name": "Sephora",
+      "lat": 48.8708,
+      "lng": 2.3323,
+      "industry": "Cosmetics Retail"
+    }
+  ],
+  "Facebook": [
+    {
+      "name": "Instagram",
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "industry": "Social Media"
+    },
+    {
+      "name": "WhatsApp",
+      "lat": 37.3861,
+      "lng": -122.0839,
+      "industry": "Messaging App"
+    },
+    {
+      "name": "Oculus",
+      "lat": 33.6846,
+      "lng": -117.8265,
+      "industry": "Virtual Reality"
+    },
+    {
+      "name": "Facebook (Israel)",
+      "lat": 32.08,
+      "lng": 34.78,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Facebook Overseas, Inc",
+      "lat": 37.454166666,
+      "lng": -122.178611111,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 37.0,
+      "lng": -120.0,
+      "industry": "software industry"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 33.684166666,
+      "lng": -117.7925,
+      "industry": "electronics industry"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 37.454166666,
+      "lng": -122.178611111,
+      "industry": "electronics industry"
+    },
+    {
+      "name": "WhatsApp LLC",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "information technology industry"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 33.684166666,
+      "lng": -117.7925,
+      "industry": "virtual reality industry"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 37.454166666,
+      "lng": -122.178611111,
+      "industry": "virtual reality industry"
+    },
+    {
+      "name": "Facebook Israel",
+      "lat": 37.429166666,
+      "lng": -122.138055555,
+      "industry": "software industry"
+    },
+    {
+      "name": "Beat Games",
+      "lat": 50.0875,
+      "lng": 14.421388888,
+      "industry": "video game industry"
+    },
+    {
+      "name": "Mapillary",
+      "lat": 55.583333333,
+      "lng": 13.0,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 33.684166666,
+      "lng": -117.7925,
+      "industry": "software industry"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 37.454166666,
+      "lng": -122.178611111,
+      "industry": "software industry"
+    },
+    {
+      "name": "Facebook Israel",
+      "lat": 37.416667,
+      "lng": -122.133333,
+      "industry": "software industry"
+    },
+    {
+      "name": "PlayGiga",
+      "lat": 40.416944444,
+      "lng": -3.703333333,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 37.0,
+      "lng": -120.0,
+      "industry": "electronics industry"
+    },
+    {
+      "name": "Novi Financial",
+      "lat": 37.454166666,
+      "lng": -122.178611111,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Cassin Networks ApS",
+      "lat": 55.733333333,
+      "lng": 12.566666666,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Reality Labs",
+      "lat": 37.0,
+      "lng": -120.0,
+      "industry": "virtual reality industry"
+    }
+  ],
+  "Meta Platforms": [
+    {
+      "name": "Instagram",
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "industry": "Social Media"
+    },
+    {
+      "name": "WhatsApp",
+      "lat": 37.3861,
+      "lng": -122.0839,
+      "industry": "Messaging App"
+    },
+    {
+      "name": "Oculus",
+      "lat": 33.6846,
+      "lng": -117.8265,
+      "industry": "Virtual Reality"
+    }
+  ],
+  "Tesla, SpaceX": [
+    {
+      "name": "Tesla Headquarters",
+      "lat": 30.2223,
+      "lng": -97.6171,
+      "industry": "Electric Vehicles"
+    },
+    {
+      "name": "SpaceX",
+      "lat": 33.9207,
+      "lng": -118.3278,
+      "industry": "Aerospace"
+    },
+    {
+      "name": "X (Twitter)",
+      "lat": 37.7766,
+      "lng": -122.4165,
+      "industry": "Social Media"
+    },
+    {
+      "name": "The Boring Company",
+      "lat": 30.4398,
+      "lng": -97.62,
+      "industry": "Infrastructure"
+    },
+    {
+      "name": "Neuralink",
+      "lat": 37.5255,
+      "lng": -121.9363,
+      "industry": "Neurotechnology"
+    },
+    {
+      "name": "xAI",
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "industry": "Artificial Intelligence"
+    }
+  ],
+  "Amazon": [
+    {
+      "name": "AWS (Amazon Web Services)",
+      "lat": 47.6155,
+      "lng": -122.3385,
+      "industry": "Cloud Computing"
+    },
+    {
+      "name": "Whole Foods Market",
+      "lat": 30.2706,
+      "lng": -97.7423,
+      "industry": "Grocery Retail"
+    },
+    {
+      "name": "Twitch",
+      "lat": 37.7915,
+      "lng": -122.4021,
+      "industry": "Live Streaming"
+    },
+    {
+      "name": "Zappos",
+      "lat": 36.1685,
+      "lng": -115.1415,
+      "industry": "E-Commerce Footwear"
+    },
+    {
+      "name": "MGM Studios",
+      "lat": 34.0526,
+      "lng": -118.4116,
+      "industry": "Film Entertainment"
+    },
+    {
+      "name": "Ring",
+      "lat": 34.0135,
+      "lng": -118.495,
+      "industry": "Home Security"
+    },
+    {
+      "name": "Blue Origin (Bezos)",
+      "lat": 47.3917,
+      "lng": -122.2573,
+      "industry": "Aerospace"
+    },
+    {
+      "name": "The Washington Post",
+      "lat": 38.9029,
+      "lng": -77.0308,
+      "industry": "News Media"
+    }
+  ],
+  "Oracle": [
+    {
+      "name": "NetSuite",
+      "lat": 37.5485,
+      "lng": -122.273,
+      "industry": "Cloud ERP"
+    },
+    {
+      "name": "Cerner",
+      "lat": 39.115,
+      "lng": -94.6293,
+      "industry": "Healthcare IT"
+    },
+    {
+      "name": "Sun Microsystems (Legacy)",
+      "lat": 37.3861,
+      "lng": -121.9554,
+      "industry": "Computing"
+    },
+    {
+      "name": "Lanai Island (Ellison)",
+      "lat": 20.829,
+      "lng": -156.9248,
+      "industry": "Real Estate"
+    }
+  ],
+  "Bill & Melinda Gates Foundation": [
+    {
+      "name": "Microsoft Corporation",
+      "lat": 47.6396,
+      "lng": -122.1284,
+      "industry": "Software"
+    },
+    {
+      "name": "Cascade Investment",
+      "lat": 47.6694,
+      "lng": -122.1969,
+      "industry": "Holding Company"
+    },
+    {
+      "name": "Four Seasons Hotels",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "industry": "Hospitality"
+    },
+    {
+      "name": "TerraPower",
+      "lat": 47.6101,
+      "lng": -122.2015,
+      "industry": "Nuclear Energy"
+    }
+  ],
+  "Los Angeles Clippers": [
+    {
+      "name": "Microsoft Corporation",
+      "lat": 47.6396,
+      "lng": -122.1284,
+      "industry": "Software"
+    },
+    {
+      "name": "Intuit Dome",
+      "lat": 33.9452,
+      "lng": -118.3421,
+      "industry": "Sports Arena"
+    }
+  ],
+  "Bloomberg": [
+    {
+      "name": "Bloomberg Terminal",
+      "lat": 40.7619,
+      "lng": -73.9679,
+      "industry": "Financial Data"
+    },
+    {
+      "name": "Bloomberg News",
+      "lat": 40.7619,
+      "lng": -73.9679,
+      "industry": "Media"
+    },
+    {
+      "name": "Bloomberg Tradebook",
+      "lat": 40.7619,
+      "lng": -73.9679,
+      "industry": "Brokerage"
+    }
+  ],
+  "America Movil SAB de CV (ADR)": [
+    {
+      "name": "Telcel",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "industry": "Mobile Telecom"
+    },
+    {
+      "name": "Telmex",
+      "lat": 19.433,
+      "lng": -99.134,
+      "industry": "Telecommunications"
+    },
+    {
+      "name": "Claro",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "industry": "Broadband"
+    },
+    {
+      "name": "Grupo Carso",
+      "lat": 19.4328,
+      "lng": -99.1335,
+      "industry": "Conglomerate"
+    }
+  ],
+  "Reliance Industries Ltd.": [
+    {
+      "name": "Jio Platforms",
+      "lat": 19.1136,
+      "lng": 73.01,
+      "industry": "Telecommunications"
+    },
+    {
+      "name": "Reliance Retail",
+      "lat": 19.0183,
+      "lng": 72.8427,
+      "industry": "Retail Shopping"
+    },
+    {
+      "name": "Network18",
+      "lat": 19.1352,
+      "lng": 72.8687,
+      "industry": "Mass Media"
+    },
+    {
+      "name": "Jamnagar Refinery",
+      "lat": 22.3686,
+      "lng": 69.8339,
+      "industry": "Petrochemicals"
+    }
+  ],
+  "L'Or\u00e9al": [
+    {
+      "name": "Lanc\u00f4me",
+      "lat": 48.8687,
+      "lng": 2.3315,
+      "industry": "Cosmetics"
+    },
+    {
+      "name": "Maybelline New York",
+      "lat": 40.7589,
+      "lng": -73.9851,
+      "industry": "Makeup"
+    },
+    {
+      "name": "Garnier",
+      "lat": 48.8606,
+      "lng": 2.3376,
+      "industry": "Haircare"
+    },
+    {
+      "name": "Kiehl's",
+      "lat": 40.7303,
+      "lng": -73.9877,
+      "industry": "Skincare"
+    },
+    {
+      "name": "CeraVe",
+      "lat": 40.758,
+      "lng": -73.9855,
+      "industry": "Dermatology"
+    }
+  ],
+  "Zara": [
+    {
+      "name": "Inditex Headquarters",
+      "lat": 43.3214,
+      "lng": -8.5037,
+      "industry": "Retail Parent"
+    },
+    {
+      "name": "Massimo Dutti",
+      "lat": 43.3214,
+      "lng": -8.5037,
+      "industry": "Fashion"
+    },
+    {
+      "name": "Pull&Bear",
+      "lat": 43.3214,
+      "lng": -8.5037,
+      "industry": "Apparel"
+    },
+    {
+      "name": "Bershka",
+      "lat": 43.3214,
+      "lng": -8.5037,
+      "industry": "Youth Fashion"
+    },
+    {
+      "name": "Inditex",
+      "lat": 43.3211,
+      "lng": -8.5082,
+      "industry": "Fashion Retail"
+    },
+    {
+      "name": "Stradivarius",
+      "lat": 41.3851,
+      "lng": 2.1734,
+      "industry": "Fashion Retail"
+    }
+  ],
+  "Beverages, pharmaceuticals": [
+    {
+      "name": "Nongfu Spring",
+      "lat": 30.2741,
+      "lng": 120.1551,
+      "industry": "Bottled Water"
+    },
+    {
+      "name": "Beijing Wantai Biological",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "industry": "Vaccines & Diagnostics"
+    }
+  ],
+  "Koch Industries, Inc.": [
+    {
+      "name": "Georgia-Pacific",
+      "lat": 33.759,
+      "lng": -84.3888,
+      "industry": "Paper & Pulp"
+    },
+    {
+      "name": "Flint Hills Resources",
+      "lat": 37.6922,
+      "lng": -97.3301,
+      "industry": "Refining"
+    },
+    {
+      "name": "Koch Minerals",
+      "lat": 37.6922,
+      "lng": -97.3301,
+      "industry": "Commodities"
+    },
+    {
+      "name": "Infor",
+      "lat": 40.7484,
+      "lng": -73.9857,
+      "industry": "Enterprise Software"
+    }
+  ],
+  "Koch Industries": [
+    {
+      "name": "Georgia-Pacific",
+      "lat": 33.759,
+      "lng": -84.3888,
+      "industry": "Paper & Pulp"
+    },
+    {
+      "name": "Flint Hills Resources",
+      "lat": 37.6922,
+      "lng": -97.3301,
+      "industry": "Refining"
+    },
+    {
+      "name": "Koch Minerals",
+      "lat": 37.6922,
+      "lng": -97.3301,
+      "industry": "Commodities"
+    },
+    {
+      "name": "Infor",
+      "lat": 40.7484,
+      "lng": -73.9857,
+      "industry": "Enterprise Software"
+    }
+  ],
+  "Tencent": [
+    {
+      "name": "WeChat (Weixin)",
+      "lat": 22.5431,
+      "lng": 114.0579,
+      "industry": "Super App"
+    },
+    {
+      "name": "Riot Games",
+      "lat": 34.0305,
+      "lng": -118.4559,
+      "industry": "Video Games"
+    },
+    {
+      "name": "Epic Games (Stake)",
+      "lat": 35.7915,
+      "lng": -78.7811,
+      "industry": "Game Engine & Software"
+    },
+    {
+      "name": "Supercell",
+      "lat": 60.1699,
+      "lng": 24.9384,
+      "industry": "Mobile Gaming"
+    },
+    {
+      "name": "Tencent Music",
+      "lat": 22.5431,
+      "lng": 114.0579,
+      "industry": "Entertainment"
+    },
+    {
+      "name": "Suzuki Indomobil Motor",
+      "lat": -6.175277777,
+      "lng": 106.826944444,
+      "industry": "automotive industry"
+    },
+    {
+      "name": "Maruti Suzuki",
+      "lat": 28.613888888,
+      "lng": 77.208888888,
+      "industry": "automotive industry"
+    },
+    {
+      "name": "Magyar Suzuki",
+      "lat": 47.785555555,
+      "lng": 18.740277777,
+      "industry": "automobile manufacturer"
+    },
+    {
+      "name": "Pak Suzuki Motors",
+      "lat": 24.86,
+      "lng": 67.01,
+      "industry": "automotive industry"
+    },
+    {
+      "name": "Suzuki Motor Gujarat",
+      "lat": 23.021944444,
+      "lng": 72.579722222,
+      "industry": "Corporate Operation"
+    }
+  ],
+  "ByteDance": [
+    {
+      "name": "TikTok",
+      "lat": 34.0205,
+      "lng": -118.3963,
+      "industry": "Short Video Platform"
+    },
+    {
+      "name": "Douyin",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "industry": "Social Media"
+    },
+    {
+      "name": "Toutiao",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "industry": "News Aggregator"
+    },
+    {
+      "name": "Moonton",
+      "lat": 31.2304,
+      "lng": 121.4737,
+      "industry": "Video Games"
+    }
+  ],
+  "Dell Inc.": [
+    {
+      "name": "Dell Technologies",
+      "lat": 30.49,
+      "lng": -97.669,
+      "industry": "Hardware"
+    },
+    {
+      "name": "Alienware",
+      "lat": 25.7617,
+      "lng": -80.1918,
+      "industry": "Gaming Computers"
+    },
+    {
+      "name": "VMware (Former/Broadcom)",
+      "lat": 37.4042,
+      "lng": -122.1481,
+      "industry": "Virtualization"
+    },
+    {
+      "name": "Secureworks",
+      "lat": 33.9142,
+      "lng": -84.3415,
+      "industry": "Cybersecurity"
+    }
+  ],
+  "Nike": [
+    {
+      "name": "Converse",
+      "lat": 42.3601,
+      "lng": -71.0589,
+      "industry": "Footwear"
+    },
+    {
+      "name": "Jordan Brand",
+      "lat": 45.5074,
+      "lng": -122.8272,
+      "industry": "Athletic Apparel"
+    },
+    {
+      "name": "Hurley (Former)",
+      "lat": 33.6409,
+      "lng": -117.9189,
+      "industry": "Surfwear"
+    },
+    {
+      "name": "Umbro",
+      "lat": 53.466666666,
+      "lng": -2.233333333,
+      "industry": "sports industry"
+    },
+    {
+      "name": "Hurley International",
+      "lat": 33.67,
+      "lng": -117.91,
+      "industry": "textile industry"
+    },
+    {
+      "name": "Cole Haan",
+      "lat": 43.036111111,
+      "lng": -70.832777777,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Umbro",
+      "lat": 53.466666666,
+      "lng": -2.233333333,
+      "industry": "textile industry"
+    }
+  ],
+  "Luxury goods": [
+    {
+      "name": "Kering Headquarters",
+      "lat": 48.8647,
+      "lng": 2.329,
+      "industry": "Holding Company"
+    },
+    {
+      "name": "Gucci",
+      "lat": 43.7696,
+      "lng": 11.2558,
+      "industry": "High Fashion"
+    },
+    {
+      "name": "Yves Saint Laurent",
+      "lat": 48.868,
+      "lng": 2.3275,
+      "industry": "Haute Couture"
+    },
+    {
+      "name": "Bottega Veneta",
+      "lat": 45.4384,
+      "lng": 10.9916,
+      "industry": "Leather Goods"
+    },
+    {
+      "name": "Balenciaga",
+      "lat": 48.8667,
+      "lng": 2.3333,
+      "industry": "Luxury Brand"
+    },
+    {
+      "name": "Alexander McQueen",
+      "lat": 51.5273,
+      "lng": -0.0984,
+      "industry": "Fashion"
+    },
+    {
+      "name": "Christie's Auction House",
+      "lat": 51.5065,
+      "lng": -0.1378,
+      "industry": "Fine Arts"
+    }
+  ],
+  "CK Hutchison Holdings": [
+    {
+      "name": "A.S. Watson Group",
+      "lat": 22.3167,
+      "lng": 114.1833,
+      "industry": "Health & Beauty Retail"
+    },
+    {
+      "name": "3 (Telecommunications)",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "industry": "Mobile Network"
+    },
+    {
+      "name": "Husky Energy (Cenovus)",
+      "lat": 51.0447,
+      "lng": -114.0719,
+      "industry": "Energy"
+    },
+    {
+      "name": "Felixstowe Port",
+      "lat": 51.9566,
+      "lng": 1.3129,
+      "industry": "Ports Infrastructure"
+    }
+  ],
+  "Red Bull": [
+    {
+      "name": "Red Bull Racing (F1)",
+      "lat": 52.0086,
+      "lng": -0.6865,
+      "industry": "Formula 1"
+    },
+    {
+      "name": "AlphaTauri / Visa Cash App RB",
+      "lat": 44.2965,
+      "lng": 11.8797,
+      "industry": "Formula 1"
+    },
+    {
+      "name": "RB Leipzig",
+      "lat": 51.3456,
+      "lng": 12.3556,
+      "industry": "Football Club"
+    },
+    {
+      "name": "New York Red Bulls",
+      "lat": 40.7368,
+      "lng": -74.1503,
+      "industry": "Soccer Franchise"
+    },
+    {
+      "name": "ServusTV",
+      "lat": 47.7981,
+      "lng": 13.0458,
+      "industry": "Television Network"
+    },
+    {
+      "name": "Red Bull GmbH",
+      "lat": 47.8184,
+      "lng": 13.2505,
+      "industry": "Beverages"
+    },
+    {
+      "name": "Scuderia AlphaTauri (F1)",
+      "lat": 44.2833,
+      "lng": 11.8833,
+      "industry": "Motorsport"
+    }
+  ],
+  "Hotels, investments": [
+    {
+      "name": "Hyatt Hotels Corporation",
+      "lat": 41.8818,
+      "lng": -87.6231,
+      "industry": "Hospitality"
+    },
+    {
+      "name": "Andaz Hotels",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "industry": "Luxury Hotels"
+    },
+    {
+      "name": "Miraval Resorts",
+      "lat": 32.2226,
+      "lng": -110.9747,
+      "industry": "Wellness Resorts"
+    },
+    {
+      "name": "Grand Hyatt",
+      "lat": 22.3193,
+      "lng": 114.1694,
+      "industry": "International Hospitality"
+    },
+    {
+      "name": "Pritzker Group",
+      "lat": 41.8781,
+      "lng": -87.6298,
+      "industry": "Private Equity"
+    }
+  ],
+  "LVMH": [],
+  "Google": [
+    {
+      "name": "Google",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "Internet"
+    },
+    {
+      "name": "Google",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "information technology"
+    },
+    {
+      "name": "Google Ireland Holdings Unlimited Company",
+      "lat": 32.295,
+      "lng": -64.783055555,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Google Nest",
+      "lat": 37.429166666,
+      "lng": -122.138055555,
+      "industry": "home automation"
+    },
+    {
+      "name": "Google",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "internet marketing"
+    },
+    {
+      "name": "Google",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "technology industry"
+    },
+    {
+      "name": "Owlchemy Labs",
+      "lat": 30.3,
+      "lng": -97.733333333,
+      "industry": "video game industry"
+    },
+    {
+      "name": "Google",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "Internet industry"
+    },
+    {
+      "name": "Google",
+      "lat": 37.422053,
+      "lng": -122.084442,
+      "industry": "Internet"
+    },
+    {
+      "name": "Google",
+      "lat": 37.422053,
+      "lng": -122.084442,
+      "industry": "information technology"
+    },
+    {
+      "name": "Waymo",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "taxi service"
+    },
+    {
+      "name": "Google",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "software industry"
+    },
+    {
+      "name": "Google Nest",
+      "lat": 37.416667,
+      "lng": -122.133333,
+      "industry": "home automation"
+    },
+    {
+      "name": "Google Ireland Holdings Unlimited Company",
+      "lat": 53.349722222,
+      "lng": -6.260277777,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Google",
+      "lat": 37.422053,
+      "lng": -122.084442,
+      "industry": "internet marketing"
+    },
+    {
+      "name": "Google",
+      "lat": 37.422053,
+      "lng": -122.084442,
+      "industry": "technology industry"
+    },
+    {
+      "name": "Calico",
+      "lat": 37.775,
+      "lng": -122.419444444,
+      "industry": "biotechnology"
+    },
+    {
+      "name": "GV",
+      "lat": 37.392777777,
+      "lng": -122.041944444,
+      "industry": "investment fund"
+    },
+    {
+      "name": "Google",
+      "lat": 37.422053,
+      "lng": -122.084442,
+      "industry": "Internet industry"
+    },
+    {
+      "name": "Google",
+      "lat": 37.422053,
+      "lng": -122.084442,
+      "industry": "software industry"
+    }
+  ],
+  "Microsoft": [
+    {
+      "name": "Ensemble Studios",
+      "lat": 32.779166666,
+      "lng": -96.808888888,
+      "industry": "video game industry"
+    },
+    {
+      "name": "Microsoft Mobile",
+      "lat": 60.205555555,
+      "lng": 24.655555555,
+      "industry": "software development"
+    },
+    {
+      "name": "Lionhead Studios",
+      "lat": 51.2354,
+      "lng": -0.5746,
+      "industry": "video game industry"
+    },
+    {
+      "name": "Sysinternals",
+      "lat": 30.3,
+      "lng": -97.733333333,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Microsoft (Netherlands)",
+      "lat": 52.366666666,
+      "lng": 4.883333333,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Microsoft Germany",
+      "lat": 48.1672,
+      "lng": 11.5861,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Lionhead Studios",
+      "lat": 51.2354,
+      "lng": -0.5746,
+      "industry": "interactive entertainment"
+    },
+    {
+      "name": "Microsoft s.r.o.",
+      "lat": 50.0875,
+      "lng": 14.421388888,
+      "industry": "software industry"
+    },
+    {
+      "name": "Microsoft Japan",
+      "lat": 35.609166666,
+      "lng": 139.730166666,
+      "industry": "video game industry"
+    },
+    {
+      "name": "Fast Search & Transfer",
+      "lat": 59.913333333,
+      "lng": 10.738888888,
+      "industry": "software industry"
+    },
+    {
+      "name": "Microsoft (United Kingdom)",
+      "lat": 51.454166666,
+      "lng": -0.973055555,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Clipchamp Pty Ltd",
+      "lat": -27.458421,
+      "lng": 153.0340433,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "LinkedIn Ireland",
+      "lat": 53.349722222,
+      "lng": -6.260277777,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Microsoft Global Finance",
+      "lat": 53.349722222,
+      "lng": -6.260277777,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Microsoft Ireland Operations",
+      "lat": 53.349722222,
+      "lng": -6.260277777,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Microsoft Ireland Research",
+      "lat": 53.349722222,
+      "lng": -6.260277777,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Turn 10 Studios",
+      "lat": 47.669444444,
+      "lng": -122.123888888,
+      "industry": "video game industry"
+    },
+    {
+      "name": "Microsoft Switzerland",
+      "lat": 47.374444444,
+      "lng": 8.541111111,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "LinkedIn Corporation",
+      "lat": 37.368888888,
+      "lng": -122.036944444,
+      "industry": "Internet"
+    },
+    {
+      "name": "Razorfish",
+      "lat": 40.712777777,
+      "lng": -74.006111111,
+      "industry": "digital marketing"
+    },
+    {
+      "name": "Microsoft Online",
+      "lat": 36.167222222,
+      "lng": -115.148611111,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Perceptive Pixel",
+      "lat": 47.669444444,
+      "lng": -122.123888888,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Microsoft Israel",
+      "lat": 32.155555555,
+      "lng": 34.842222222,
+      "industry": "Corporate Operation"
+    },
+    {
+      "name": "Nuance Communications",
+      "lat": 42.504722222,
+      "lng": -71.196111111,
+      "industry": "software industry"
+    }
+  ],
+  "internet, telecom": [],
+  "Hedge funds": [
+    {
+      "name": "Bridgewater Associates (Dalio)",
+      "lat": 41.1415,
+      "lng": -73.3596,
+      "industry": "Hedge Fund"
+    },
+    {
+      "name": "Citadel LLC (Griffin)",
+      "lat": 25.7617,
+      "lng": -80.1918,
+      "industry": "Hedge Fund"
+    },
+    {
+      "name": "Renaissance Technologies (Simons)",
+      "lat": 40.9255,
+      "lng": -73.0416,
+      "industry": "Quantitative Trading"
+    },
+    {
+      "name": "Point72 Asset Management (Cohen)",
+      "lat": 41.0534,
+      "lng": -73.5387,
+      "industry": "Asset Management"
+    }
+  ],
+  "Real estate": [
+    {
+      "name": "Irvine Company (Donald Bren)",
+      "lat": 33.6189,
+      "lng": -117.8758,
+      "industry": "Commercial Real Estate"
+    },
+    {
+      "name": "The Related Companies (Stephen Ross)",
+      "lat": 40.7538,
+      "lng": -74.0006,
+      "industry": "Real Estate Development"
+    },
+    {
+      "name": "Hudson Yards",
+      "lat": 40.7537,
+      "lng": -74.0019,
+      "industry": "Urban Development"
+    },
+    {
+      "name": "Equinox Group",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "industry": "Luxury Fitness"
+    }
+  ],
+  "Bloomberg LP": [
+    {
+      "name": "Bloomberg Terminal",
+      "lat": 40.7619,
+      "lng": -73.9679,
+      "industry": "Financial Data"
+    },
+    {
+      "name": "Bloomberg News",
+      "lat": 40.7619,
+      "lng": -73.9679,
+      "industry": "Media Network"
+    },
+    {
+      "name": "Bloomberg Tradebook",
+      "lat": 40.7619,
+      "lng": -73.9679,
+      "industry": "Brokerage"
+    }
+  ],
+  "Blackrock, inc": [
+    {
+      "name": "Apple Inc. (Major Shareholder)",
+      "lat": 37.3349,
+      "lng": -122.009,
+      "industry": "Technology"
+    },
+    {
+      "name": "Microsoft Corp. (Major Shareholder)",
+      "lat": 47.6422,
+      "lng": -122.1368,
+      "industry": "Technology"
+    },
+    {
+      "name": "ExxonMobil (Major Shareholder)",
+      "lat": 32.814,
+      "lng": -96.9488,
+      "industry": "Energy"
+    },
+    {
+      "name": "JPMorgan Chase (Major Shareholder)",
+      "lat": 40.7559,
+      "lng": -73.9754,
+      "industry": "Finance"
+    },
+    {
+      "name": "Johnson & Johnson (Major Shareholder)",
+      "lat": 40.4975,
+      "lng": -74.4446,
+      "industry": "Healthcare"
+    },
+    {
+      "name": "Pfizer Inc. (Major Shareholder)",
+      "lat": 40.7497,
+      "lng": -73.974,
+      "industry": "Pharmaceuticals"
+    },
+    {
+      "name": "Chevron Corp. (Major Shareholder)",
+      "lat": 37.7661,
+      "lng": -121.9566,
+      "industry": "Energy"
+    },
+    {
+      "name": "Procter & Gamble (Major Shareholder)",
+      "lat": 39.1015,
+      "lng": -84.5125,
+      "industry": "Consumer Goods"
+    },
+    {
+      "name": "IBM (Major Shareholder)",
+      "lat": 41.1083,
+      "lng": -73.7231,
+      "industry": "Technology"
+    },
+    {
+      "name": "PepsiCo (Major Shareholder)",
+      "lat": 41.0345,
+      "lng": -73.6841,
+      "industry": "Beverages"
+    }
+  ],
+  "Vanguard": [
+    {
+      "name": "Amazon.com (Major Shareholder)",
+      "lat": 47.6152,
+      "lng": -122.3384,
+      "industry": "E-Commerce"
+    },
+    {
+      "name": "NVIDIA (Major Shareholder)",
+      "lat": 37.3712,
+      "lng": -121.964,
+      "industry": "Semiconductors"
+    },
+    {
+      "name": "Alphabet Inc. (Major Shareholder)",
+      "lat": 37.422,
+      "lng": -122.084,
+      "industry": "Technology"
+    },
+    {
+      "name": "Meta Platforms (Major Shareholder)",
+      "lat": 37.4848,
+      "lng": -122.1484,
+      "industry": "Technology"
+    },
+    {
+      "name": "Tesla, Inc. (Major Shareholder)",
+      "lat": 30.2223,
+      "lng": -97.6171,
+      "industry": "Automotive"
+    },
+    {
+      "name": "Mastercard Inc. (Major Shareholder)",
+      "lat": 41.0331,
+      "lng": -73.6841,
+      "industry": "Finance"
+    },
+    {
+      "name": "The Home Depot (Major Shareholder)",
+      "lat": 33.8642,
+      "lng": -84.4825,
+      "industry": "Retail"
+    },
+    {
+      "name": "McDonald's Corp (Major Shareholder)",
+      "lat": 41.8349,
+      "lng": -87.8936,
+      "industry": "Fast Food"
+    },
+    {
+      "name": "The Walt Disney Company (Major Shareholder)",
+      "lat": 34.1561,
+      "lng": -118.3267,
+      "industry": "Media"
+    },
+    {
+      "name": "Netflix Inc (Major Shareholder)",
+      "lat": 37.2592,
+      "lng": -121.9621,
+      "industry": "Entertainment"
+    }
+  ],
+  "State Street": [
+    {
+      "name": "SPDR S&P 500 ETF Trust",
+      "lat": 42.3533,
+      "lng": -71.056,
+      "industry": "Exchange Traded Fund"
+    },
+    {
+      "name": "Berkshire Hathaway (Major Shareholder)",
+      "lat": 41.2565,
+      "lng": -95.9345,
+      "industry": "Conglomerate"
+    },
+    {
+      "name": "UnitedHealth Group (Major Shareholder)",
+      "lat": 44.8911,
+      "lng": -93.4286,
+      "industry": "Healthcare"
+    },
+    {
+      "name": "Visa Inc. (Major Shareholder)",
+      "lat": 37.795,
+      "lng": -122.3934,
+      "industry": "Financial Services"
+    },
+    {
+      "name": "Abbott Laboratories (Major Shareholder)",
+      "lat": 42.3601,
+      "lng": -87.8101,
+      "industry": "Healthcare"
+    },
+    {
+      "name": "Verizon Communications (Major Shareholder)",
+      "lat": 40.7589,
+      "lng": -73.9851,
+      "industry": "Telecom"
+    },
+    {
+      "name": "Citigroup Inc. (Major Shareholder)",
+      "lat": 40.758,
+      "lng": -73.9855,
+      "industry": "Banking"
+    },
+    {
+      "name": "General Electric (Major Shareholder)",
+      "lat": 42.3512,
+      "lng": -71.0545,
+      "industry": "Industrial"
+    }
+  ],
+  "Candy, pet food": [
+    {
+      "name": "Mars Wrigley",
+      "lat": 41.8818,
+      "lng": -87.6231,
+      "industry": "Confectionery"
+    },
+    {
+      "name": "Banfield Pet Hospital",
+      "lat": 45.6267,
+      "lng": -122.5647,
+      "industry": "Veterinary Care"
+    },
+    {
+      "name": "VCA Animal Hospitals",
+      "lat": 34.0326,
+      "lng": -118.4552,
+      "industry": "Veterinary Care"
+    },
+    {
+      "name": "Pedigree & Whiskas (Mars Petcare)",
+      "lat": 50.8476,
+      "lng": 4.3572,
+      "industry": "Pet Food"
+    },
+    {
+      "name": "M&M's Operations",
+      "lat": 40.8529,
+      "lng": -74.8368,
+      "industry": "Confectionery"
+    }
+  ],
+  "Nutella, chocolates": [
+    {
+      "name": "Ferrero SpA",
+      "lat": 44.6853,
+      "lng": 8.0336,
+      "industry": "Confectionery"
+    },
+    {
+      "name": "Thorntons",
+      "lat": 52.9225,
+      "lng": -1.4746,
+      "industry": "Confectionery"
+    },
+    {
+      "name": "Eat Natural",
+      "lat": 51.9863,
+      "lng": 0.5898,
+      "industry": "Snacks"
+    },
+    {
+      "name": "Fannie May Confections",
+      "lat": 41.8781,
+      "lng": -87.6298,
+      "industry": "Confectionery"
+    }
+  ],
+  "Walmart": [
+    {
+      "name": "Sam's Club",
+      "lat": 36.3729,
+      "lng": -94.2088,
+      "industry": "Retailer"
+    },
+    {
+      "name": "Flipkart (Majority Stake)",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "industry": "E-Commerce"
+    },
+    {
+      "name": "Massmart",
+      "lat": -26.1076,
+      "lng": 28.0567,
+      "industry": "African Retail"
+    },
+    {
+      "name": "Moosejaw",
+      "lat": 42.4925,
+      "lng": -83.1508,
+      "industry": "Outdoor Retail"
+    }
+  ],
+  "Telecom": [
+    {
+      "name": "Am\u00e9rica M\u00f3vil",
+      "lat": 19.4441,
+      "lng": -99.2001,
+      "industry": "Telecommunications"
+    },
+    {
+      "name": "Telcel",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "industry": "Wireless"
+    },
+    {
+      "name": "Claro",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "industry": "Latin & South American Mobile"
+    },
+    {
+      "name": "Telmex",
+      "lat": 19.4285,
+      "lng": -99.1519,
+      "industry": "Landline Network"
+    }
+  ]
+}

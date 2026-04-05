@@ -1,0 +1,13 @@
+# Ignore large raw data files
+cities_raw.json
+forbes_full.json
+forbes_origins.json
+
+# Ignore temporary files
+generate_data.mjs
+generate_data.py
+/tmp/
+
+# OS specific files
+.DS_Store
+Thumbs.db

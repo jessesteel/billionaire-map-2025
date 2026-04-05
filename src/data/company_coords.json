@@ -1,0 +1,835 @@
+{
+  "Sobrato Development Cos.": null,
+  "Lens Technology": {
+    "lat": 22.8905798,
+    "lng": 113.9225802
+  },
+  "Hartz Mountain Industries, Inc.": null,
+  "SoftBank Group Corp.": null,
+  "Nvidia": {
+    "lat": 45.5344957,
+    "lng": -122.886274
+  },
+  "Retail, real estate": {
+    "lat": 44.4596217,
+    "lng": -73.147785
+  },
+  "Investments, real estate": {
+    "lat": 24.975571,
+    "lng": 55.1871177
+  },
+  "Kingston Technology Corporation": null,
+  "Coal": {
+    "lat": 34.5661009,
+    "lng": -96.2944665
+  },
+  "BMW, pharmaceuticals": null,
+  "Enterprise GP Holdings": null,
+  "Finance": null,
+  "Tencent": {
+    "lat": 13.7871932,
+    "lng": 100.5746341
+  },
+  "Pipelines": {
+    "lat": 23.9295526,
+    "lng": 53.1572843
+  },
+  "Metalworking tools": null,
+  "Chanel": {
+    "lat": 48.5745936,
+    "lng": -1.5673435
+  },
+  "WhatsApp Inc.": null,
+  "Cox Enterprises": {
+    "lat": 33.9249597,
+    "lng": -84.3501604
+  },
+  "Pharmaceutical ingredients": {
+    "lat": 23.5503756,
+    "lng": 90.6656231
+  },
+  "ArcelorMittal (ADR)": null,
+  "Arista Networks": {
+    "lat": 37.4120263,
+    "lng": -121.9759495
+  },
+  "Duquesne Family Office": null,
+  "Dell Inc.": {
+    "lat": 41.4814684,
+    "lng": -81.8371172
+  },
+  "Oil, real estate": null,
+  "Photovoltaic equipment": null,
+  "Banking, tobacco": {
+    "lat": 35.9950618,
+    "lng": -78.908153
+  },
+  "Retail": null,
+  "Power strips": null,
+  "Casinos": null,
+  "Beverages, pharmaceuticals": null,
+  "Alcohol, real estate": null,
+  "Luxury goods": {
+    "lat": 37.572261,
+    "lng": 126.9864927
+  },
+  "Sporting goods retail": {
+    "lat": 36.1604784,
+    "lng": -95.92964
+  },
+  "Money management": {
+    "lat": 53.3365803,
+    "lng": -1.4931671
+  },
+  "Coal mines": {
+    "lat": 29.8596933,
+    "lng": 67.3127152
+  },
+  "Hobby Lobby": {
+    "lat": 40.5775583,
+    "lng": -74.1645173
+  },
+  "Pig breeding": {
+    "lat": 40.1210773,
+    "lng": 44.5448245
+  },
+  "Fidelity Investments": {
+    "lat": 42.7119827,
+    "lng": -71.4439371
+  },
+  "Shoes": {
+    "lat": 54.0967945,
+    "lng": -1.3959425
+  },
+  "Stripe": {
+    "lat": 53.441968,
+    "lng": -8.8843795
+  },
+  "Solar wafers and modules": null,
+  "Cement": {
+    "lat": 34.9320105,
+    "lng": -98.1403252
+  },
+  "Online games": null,
+  "Google": {
+    "lat": 42.35092,
+    "lng": -71.0783603
+  },
+  "Prada S.p.A": {
+    "lat": 52.3602398,
+    "lng": 4.8813254
+  },
+  "Fashion retail": {
+    "lat": 33.8313901,
+    "lng": -118.3497005
+  },
+  "Blackstone Group": {
+    "lat": 44.970098,
+    "lng": -93.3595898
+  },
+  "eBay": {
+    "lat": -23.2731847,
+    "lng": -50.9650793
+  },
+  "Electronics": {
+    "lat": 34.6659813,
+    "lng": 138.0735109
+  },
+  "Restaurants": {
+    "lat": 41.5997421,
+    "lng": -93.8483774
+  },
+  "Intel Corp.": null,
+  "DST Global": null,
+  "Steel, transport": {
+    "lat": 53.5849264,
+    "lng": -0.6244494
+  },
+  "Hon Hai Precision Industries": null,
+  "Icahn Capital Management": null,
+  "America Movil SAB de CV (ADR)": null,
+  "Metals, investments": {
+    "lat": 24.9919479,
+    "lng": 55.1540525
+  },
+  "Caxton Associates LP": null,
+  "Cheese": {
+    "lat": 51.5129249,
+    "lng": -0.0838524
+  },
+  "Red Bull": {
+    "lat": 52.9143881,
+    "lng": -2.4429149
+  },
+  "MBK Partners": null,
+  "Biotech": {
+    "lat": 10.4349785,
+    "lng": -66.8651384
+  },
+  "Finance, telecommunications": null,
+  "Reyes Holdings, LLC": null,
+  "Fertilizer": {
+    "lat": 5.6108455,
+    "lng": -0.099905
+  },
+  "Viking Global Investors": null,
+  "Koch Industries, Inc.": null,
+  "Temp agency": null,
+  "E-commerce": {
+    "lat": 24.9407244,
+    "lng": 67.0405925
+  },
+  "Paints": {
+    "lat": 54.9701296,
+    "lng": -1.6185765
+  },
+  "Fertilizers": {
+    "lat": 10.4711807,
+    "lng": 76.0944428
+  },
+  "Hancock Prospecting": null,
+  "Medical equipment": {
+    "lat": 50.7173004,
+    "lng": -3.5037281
+  },
+  "Packaging": {
+    "lat": 59.4727514,
+    "lng": 24.9152826
+  },
+  "Self storage": {
+    "lat": 32.9080616,
+    "lng": -117.1748474
+  },
+  "Casinos/hotels": {
+    "lat": 36.1424186,
+    "lng": -115.1749241
+  },
+  "Zara": {
+    "lat": 44.1168594,
+    "lng": 15.2353257
+  },
+  "Real estate, shipping": null,
+  "Manufacturing, investments": {
+    "lat": 24.973752,
+    "lng": 55.2084582
+  },
+  "Reliance Industries Ltd.": {
+    "lat": 19.0557444,
+    "lng": 72.8709232
+  },
+  "Bloomberg": {
+    "lat": 51.512773,
+    "lng": -0.0906448
+  },
+  "Medical devices": {
+    "lat": 50.7062673,
+    "lng": 7.1359591
+  },
+  "Construction, investments": {
+    "lat": 25.0030671,
+    "lng": 55.1613156
+  },
+  "Dangote Group": null,
+  "Cryptocurrency exchange": {
+    "lat": 50.049666,
+    "lng": 19.9614051
+  },
+  "Amazon": {
+    "lat": -1.8283279,
+    "lng": -53.2862985
+  },
+  "Construction equipment": {
+    "lat": 29.870788,
+    "lng": 31.1352486
+  },
+  "Tudor Investment Corporation": null,
+  "Discount brokerage": null,
+  "Electronics components": {
+    "lat": 12.8407163,
+    "lng": 77.6773646
+  },
+  "Bridgewater Associates": {
+    "lat": 35.6624646,
+    "lng": -97.5137111
+  },
+  "Hotels, investments": null,
+  "Soy sauce": {
+    "lat": 34.0984987,
+    "lng": -118.345309
+  },
+  "The Est\u00e9e Lauder Companies": null,
+  "Metals and mining": null,
+  "C&S Wholesale Grocers": {
+    "lat": 41.941742,
+    "lng": -72.6596982
+  },
+  "Tiger Global Management": null,
+  "Candy, pet food": null,
+  "Personal care goods": null,
+  "Automobiles": {
+    "lat": 48.884256,
+    "lng": 2.287307
+  },
+  "Sports apparel": {
+    "lat": 53.4393204,
+    "lng": -1.4648834
+  },
+  "Bill & Melinda Gates Foundation": {
+    "lat": 47.6236822,
+    "lng": -122.3461791
+  },
+  "Beer": {
+    "lat": 50.7020579,
+    "lng": -3.1049585
+  },
+  "Oracle": {
+    "lat": 33.1082105,
+    "lng": -96.8200575
+  },
+  "Medical packaging": {
+    "lat": 10.4776545,
+    "lng": 76.1625778
+  },
+  "Telecom": null,
+  "ByteDance": {
+    "lat": 37.3555833,
+    "lng": -121.931328
+  },
+  "Record label": {
+    "lat": 19.1968957,
+    "lng": -99.4748607
+  },
+  "Los Angeles Clippers": {
+    "lat": 33.9831804,
+    "lng": -118.3996103
+  },
+  "Steel, coal": {
+    "lat": -26.6578933,
+    "lng": 27.8106244
+  },
+  "Carnival Corp.": null,
+  "IT provider": {
+    "lat": 44.0379693,
+    "lng": 10.1211372
+  },
+  "Mining": null,
+  "Shipping": null,
+  "BMW": {
+    "lat": 36.4962994,
+    "lng": -4.9494047
+  },
+  "Software": null,
+  "Real Estate": null,
+  "Kinder Morgan Inc": {
+    "lat": 32.821109,
+    "lng": -79.9504546
+  },
+  "Biomedical products": {
+    "lat": 39.1262574,
+    "lng": -78.2053901
+  },
+  "Security software": null,
+  "Oil and gas, IT, lotteries": null,
+  "Landry's Inc": {
+    "lat": 33.4659625,
+    "lng": -112.0038732
+  },
+  "News Corp Class A": null,
+  "BlueCrest Capital Management": null,
+  "Gambling": {
+    "lat": 36.1130405,
+    "lng": -115.0628337
+  },
+  "Automobiles, batteries": null,
+  "CMA CGM": {
+    "lat": 49.4902632,
+    "lng": 0.1197812
+  },
+  "Internet, telecom": null,
+  "LVMH Moet Hennessy Louis Vuitton": {
+    "lat": 48.866358,
+    "lng": 2.3055236
+  },
+  "Financial information": {
+    "lat": 33.3210213,
+    "lng": 44.4128415
+  },
+  "Batteries": {
+    "lat": 51.3176591,
+    "lng": 0.7848966
+  },
+  "Fertilizer, real estate": null,
+  "medical devices": {
+    "lat": 50.7062673,
+    "lng": 7.1359591
+  },
+  "Hydraulic machinery": {
+    "lat": 34.7630513,
+    "lng": 113.4788245
+  },
+  "Sports, real estate": {
+    "lat": 40.8106729,
+    "lng": -73.6800194
+  },
+  "Artemis Real Estate Partners": null,
+  "Soros Fund Management LLC": null,
+  "Snacks, beverages": null,
+  "Retail, media": null,
+  "Textiles, apparel": null,
+  "Homebuilding, insurance": null,
+  "Messaging app": null,
+  "Danaher": {
+    "lat": 46.3435978,
+    "lng": -85.7809631
+  },
+  "Drugstores": {
+    "lat": -34.5602857,
+    "lng": -58.4579406
+  },
+  "Millennium Management, L.L.C.": null,
+  "Cargill": {
+    "lat": 44.1956676,
+    "lng": -81.2481564
+  },
+  "Chemicals": null,
+  "Beverages": null,
+  "Internet media": {
+    "lat": 25.1021654,
+    "lng": 55.1739012
+  },
+  "Jim Pattison Group": null,
+  "Energy, investments": null,
+  "Point72 Asset Management": {
+    "lat": 41.0273889,
+    "lng": -73.5530302
+  },
+  "Charles Schwab Corp.": null,
+  "Nike": {
+    "lat": 52.2459094,
+    "lng": 21.0091983
+  },
+  "Home appliances": {
+    "lat": 23.5861259,
+    "lng": 58.5456343
+  },
+  "Hotels, energy": null,
+  "Samsung": {
+    "lat": 50.1968901,
+    "lng": 15.8482368
+  },
+  "Infrastructure, commodities": null,
+  "Hermes": {
+    "lat": 49.3571636,
+    "lng": 2.2461658
+  },
+  "Agribusiness": {
+    "lat": -27.5510701,
+    "lng": 151.8062252
+  },
+  "Lithium batteries": null,
+  "Heineken": {
+    "lat": -25.163353,
+    "lng": -50.1236804
+  },
+  "Media": {
+    "lat": 39.9167783,
+    "lng": -75.387693
+  },
+  "Atlanta Falcons": null,
+  "Majestic Realty, Co.": {
+    "lat": 40.6081073,
+    "lng": -75.3281887
+  },
+  "Soft drinks, fast food": null,
+  "Metals": {
+    "lat": 45.5353439,
+    "lng": 11.9509805
+  },
+  "Gambling software": null,
+  "Alcoholic beverages": {
+    "lat": 25.7560556,
+    "lng": 55.9085302
+  },
+  "Auto parts": {
+    "lat": -34.8628877,
+    "lng": -56.1340973
+  },
+  "Sensors": {
+    "lat": 48.4208803,
+    "lng": 10.161771
+  },
+  "Retail, investments": {
+    "lat": 24.9867897,
+    "lng": 55.2030547
+  },
+  "East Hope Group": {
+    "lat": 3.4027204,
+    "lng": 31.7400056
+  },
+  "Arvest Bank Group, Inc.": null,
+  "Nutella, chocolates": null,
+  "Oil, banking, telecom": null,
+  "Aluminum products": {
+    "lat": 47.7088064,
+    "lng": -117.3560625
+  },
+  "Aldi, Trader Joe's": null,
+  "Real estate": null,
+  "Fasteners": {
+    "lat": 49.8160864,
+    "lng": 18.2644636
+  },
+  "Airbnb": {
+    "lat": 37.7719568,
+    "lng": -122.4054484
+  },
+  "Broadcom": {
+    "lat": 48.1323284,
+    "lng": 11.6921524
+  },
+  "Workday": {
+    "lat": 37.6986699,
+    "lng": -121.9264412
+  },
+  "Menard, Inc.": null,
+  "Diamonds": {
+    "lat": 45.5206006,
+    "lng": -122.6740435
+  },
+  "Steel, mining": {
+    "lat": 53.5932914,
+    "lng": -0.6314244
+  },
+  "Fintech": {
+    "lat": 44.4423185,
+    "lng": 18.8750709
+  },
+  "Mapping software": null,
+  "Carpet": {
+    "lat": 44.4133637,
+    "lng": 0.1015178
+  },
+  "Renaissance Technologies Corp.": null,
+  "Irvine Company": {
+    "lat": 33.6166449,
+    "lng": -117.8718216
+  },
+  "Gulf States Toyota": null,
+  "Furniture": {
+    "lat": 11.1867775,
+    "lng": 76.0785093
+  },
+  "Wipro Ltd.": {
+    "lat": 14.6429095,
+    "lng": 121.0393689
+  },
+  "Pharmaceuticals": null,
+  "Hennes & Mauritz Unsponsored ADR": null,
+  "Salesforce.com": null,
+  "Food, beverages": null,
+  "Timberland, lumber mills": null,
+  "Solar panels": {
+    "lat": -14.3372261,
+    "lng": -170.7248058
+  },
+  "Vacuums": {
+    "lat": 41.1786616,
+    "lng": -80.5677017
+  },
+  "Koch Industries": {
+    "lat": 37.7509518,
+    "lng": -97.2879269
+  },
+  "Fidelity": {
+    "lat": 42.7119827,
+    "lng": -71.4439371
+  },
+  "Dallas Cowboys": {
+    "lat": 32.9472547,
+    "lng": -96.9538585
+  },
+  "Kleiner Perkins": {
+    "lat": 37.7813038,
+    "lng": -122.3937527
+  },
+  "Metalloinvest": {
+    "lat": 51.1647998,
+    "lng": 37.9407798
+  },
+  "Construction, mining": {
+    "lat": 15.1397758,
+    "lng": 120.6142484
+  },
+  "Coatue Management": null,
+  "Textiles, petrochemicals": null,
+  "Meta Platforms": null,
+  "Home Depot": {
+    "lat": 37.2484976,
+    "lng": -121.8629781
+  },
+  "Music, chemicals": null,
+  "Commodities": {
+    "lat": 4.063872,
+    "lng": 9.6868317
+  },
+  "Package delivery": {
+    "lat": 14.7814193,
+    "lng": 121.0500717
+  },
+  "ABC Supply": {
+    "lat": 42.5118317,
+    "lng": -89.0307409
+  },
+  "Lego": {
+    "lat": 42.0397786,
+    "lng": -88.033899
+  },
+  "Solar equipment": {
+    "lat": 44.0906792,
+    "lng": -93.5272268
+  },
+  "Food delivery": {
+    "lat": 21.2993438,
+    "lng": 72.9539794
+  },
+  "Palm oil, shipping, property": null,
+  "Crystal Bridges Museum of American Art": {
+    "lat": 36.382108,
+    "lng": -94.2036461
+  },
+  "Asana": {
+    "lat": -17.0614967,
+    "lng": -70.5212821
+  },
+  "Berkshire Hathaway Inc. (Cl A)": null,
+  "Banking, property": null,
+  "Video surveillance": {
+    "lat": 50.5081401,
+    "lng": -116.1495746
+  },
+  "Beer, investments": null,
+  "Banks, real estate": {
+    "lat": -43.602422,
+    "lng": 172.7210432
+  },
+  "Ubiquiti": {
+    "lat": 37.3842855,
+    "lng": -121.9294099
+  },
+  "The Kraft Group": {
+    "lat": 40.7856731,
+    "lng": -74.3856733
+  },
+  "Airbnb, Inc.": null,
+  "Kynetic": null,
+  "Fertilizers, coal": null,
+  "The Children's Investment Fund Management": null,
+  "Mortgage lender": {
+    "lat": 34.1525465,
+    "lng": -118.3379417
+  },
+  "Energy": {
+    "lat": 37.7740055,
+    "lng": -89.0266269
+  },
+  "Agriculture": {
+    "lat": 0.6916889,
+    "lng": 30.2474606
+  },
+  "Biotech, investments": null,
+  "Walmart": {
+    "lat": 53.4503363,
+    "lng": -113.4812196
+  },
+  "BOK Financial Corp.": null,
+  "Petrochemicals": {
+    "lat": 1.5174066,
+    "lng": 103.7429542
+  },
+  "Solar panel components": null,
+  "Alimentation Couche Tard Inc. Cl A": null,
+  "Trading, investments": {
+    "lat": 0.294258,
+    "lng": 32.6053099
+  },
+  "Ralph Lauren": {
+    "lat": 48.8678838,
+    "lng": 2.3084902
+  },
+  "Stanford University": {
+    "lat": 37.4313138,
+    "lng": -122.1693654
+  },
+  "Dalian Wanda Group": null,
+  "Motorcycles": {
+    "lat": 50.9559019,
+    "lng": 6.60774
+  },
+  "Hankey Group": null,
+  "Buffalo Sabres": null,
+  "Banking": null,
+  "Investments": null,
+  "Mining, metals, machinery": null,
+  "Quicken Loans": {
+    "lat": 42.3262318,
+    "lng": -83.0698687
+  },
+  "Online gambling": null,
+  "Real estate, construction": {
+    "lat": 32.0170887,
+    "lng": 112.1428467
+  },
+  "Telecom, oil": {
+    "lat": 12.9673086,
+    "lng": 77.5461504
+  },
+  "Oil, gas": {
+    "lat": 35.9864439,
+    "lng": 43.7672376
+  },
+  "Epic Systems": {
+    "lat": 40.8831645,
+    "lng": -74.7302108
+  },
+  "Manufacturing": null,
+  "Steel": {
+    "lat": 0.4302205,
+    "lng": 33.2300475
+  },
+  "Health care": {
+    "lat": 23.7194239,
+    "lng": 90.4165136
+  },
+  "Celltrion Inc.": null,
+  "Two Sigma": {
+    "lat": 33.4414716,
+    "lng": -117.2966769
+  },
+  "CK Hutchison Holdings": null,
+  "Media, automotive": {
+    "lat": 39.9168644,
+    "lng": -75.3911559
+  },
+  "D. E. Shaw & Co., L.P.": null,
+  "Natural gas distribution": {
+    "lat": 52.3120831,
+    "lng": 8.9119667
+  },
+  "Thomson Reuters Corporation": {
+    "lat": 12.9476359,
+    "lng": 77.6892208
+  },
+  "Vaccines": {
+    "lat": 50.7415932,
+    "lng": 4.6120315
+  },
+  "Xiaomi": {
+    "lat": 25.87659,
+    "lng": 115.706405
+  },
+  "Tesla": {
+    "lat": 43.7403749,
+    "lng": -79.3217458
+  },
+  "Diversified": null,
+  "Cement, sugar": {
+    "lat": 39.1447264,
+    "lng": -94.4168957
+  },
+  "Oil": {
+    "lat": 51.5158331,
+    "lng": 6.8725349
+  },
+  "Ports": {
+    "lat": 47.0161003,
+    "lng": 0.5534383
+  },
+  "Hospitals": null,
+  "Consumer goods": null,
+  "Baidu.com": null,
+  "Ecommerce": null,
+  "software services": {
+    "lat": 8.5609799,
+    "lng": 76.8772059
+  },
+  "Power strip": {
+    "lat": 38.7912896,
+    "lng": -121.5852371
+  },
+  "Elliott Management": {
+    "lat": 38.3894584,
+    "lng": -76.0202011
+  },
+  "Hardware stores": {
+    "lat": 55.8518958,
+    "lng": -4.295142
+  },
+  "Mining, copper products": null,
+  "Batteries, automobiles": null,
+  "KKR & Co.": {
+    "lat": 35.2447955,
+    "lng": 139.0547021
+  },
+  "SAS Institute": {
+    "lat": 52.2768372,
+    "lng": 20.9692463
+  },
+  "Cable television": {
+    "lat": 55.7760315,
+    "lng": 49.2328362
+  },
+  "Continental Resources Inc. ": null,
+  "L'Or\u00e9al": {
+    "lat": 48.8998601,
+    "lng": 2.307784
+  },
+  "DreamWorks Animation SKG Inc. (Cl A)": null,
+  "Real estate, retail": {
+    "lat": 44.4596217,
+    "lng": -73.147785
+  },
+  "Appaloosa Management": null,
+  "Baltimore Ravens": {
+    "lat": 39.2804888,
+    "lng": -76.6210484
+  },
+  "Steel, investments": {
+    "lat": 24.986358,
+    "lng": 55.195577
+  },
+  "Coffee": {
+    "lat": 31.5301809,
+    "lng": -82.8405691
+  },
+  "Hangzhou Wahaha Group": null,
+  "Gold": {
+    "lat": 54.4244651,
+    "lng": 11.0980801
+  },
+  "Real estate, investments": {
+    "lat": 24.975571,
+    "lng": 55.1871177
+  },
+  "Citadel LLC": null,
+  "Supermarkets": {
+    "lat": 39.075081,
+    "lng": 20.6878383
+  },
+  "Emerson Collective": {
+    "lat": 43.6588661,
+    "lng": -79.4396153
+  },
+  "Private equity": null,
+  "Energy, sports, entertainment": null,
+  "Love's Travel Stops and Country Stores": null,
+  "Gas, chemicals": null,
+  "Ryan Specialty Group": null,
+  "Alphabet": {
+    "lat": 37.3398741,
+    "lng": -121.8845218
+  },
+  "Chick-fil-A": {
+    "lat": 29.7747828,
+    "lng": -95.3809423
+  }
+}
