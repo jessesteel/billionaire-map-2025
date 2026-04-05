@@ -210,7 +210,17 @@
 
                 // Render Nodes (CircleMarkers)
                 let activeBounds = [];
-                
+                const labelRegistry = []; // Screen-space collision registry for labels
+
+                const checkOverlap = (rect) => {
+                    return labelRegistry.some(r => {
+                        return !(rect.x + rect.w < r.x || 
+                                 rect.x > r.x + r.w || 
+                                 rect.y + rect.y < r.y || 
+                                 rect.y > r.y + r.h);
+                    });
+                };
+
                 // CRITICAL FIX: Sort the visible nodes by wealth descending.
                 // This guarantees that massive corporate behemoths are painted to the 
                 // Canvas FIRST, and smaller actors paint LAST, sitting permanently on top and clickable!
@@ -292,25 +302,48 @@
                         </div>
                     `;
                     
-                    // Constrain text overlap mathematically
-                    // Handled above via showPermanent logic
+                    // Advanced Geometric Anti-Collision Logic:
+                    // Force labels to "Orbit" their dot looking for "Empty Air" on your screen.
+                    let finalDir = 'top';
+                    let finalOffset = [0, -12 - finalRadius];
                     
-                    // Global Cardinal Anti-Collision System:
-                    // Force overlapping labels to Orbit their dot in different cardinal directions 
-                    // based on a deterministic hash of their name.
-                    const hash = d.name.split('').reduce((a, b) => a + b.charCodeAt(0), 0);
-                    const directions = ['top', 'bottom', 'left', 'right'];
-                    let tooltipDir = directions[hash % 4];
-                    let customOffset = [0, 0];
-                    
-                    if (tooltipDir === 'top') customOffset = [0, -12 - finalRadius];
-                    else if (tooltipDir === 'bottom') customOffset = [0, 12 + finalRadius];
-                    else if (tooltipDir === 'left') customOffset = [-12 - finalRadius, 0];
-                    else if (tooltipDir === 'right') customOffset = [12 + finalRadius, 0];
+                    if (showPermanent) {
+                        const pt = map.latLngToContainerPoint([d.lat, d.lng]);
+                        const labelW = Math.max(100, (d.name.length * 8) + 20); // Estimate width
+                        const labelH = 65; 
+
+                        const placements = [
+                            { dir: 'top', off: [0, -15 - finalRadius], rx: -labelW/2, ry: -labelH - 10 },
+                            { dir: 'bottom', off: [0, 15 + finalRadius], rx: -labelW/2, ry: 10 },
+                            { dir: 'right', off: [15 + finalRadius, 0], rx: 10, ry: -labelH/2 },
+                            { dir: 'left', off: [-15 - finalRadius, 0], rx: -labelW - 10, ry: -labelH/2 },
+                            // Secondary Orbit (Diagonals)
+                            { dir: 'top', off: [25, -25], rx: 0, ry: -labelH - 5 },
+                            { dir: 'bottom', off: [-25, 25], rx: -labelW, ry: 5 }
+                        ];
+
+                        let foundSpot = false;
+                        for (const p of placements) {
+                            const rect = { x: pt.x + p.rx, y: pt.y + p.ry, w: labelW, h: labelH };
+                            if (!checkOverlap(rect)) {
+                                finalDir = p.dir;
+                                finalOffset = p.off;
+                                labelRegistry.push(rect);
+                                foundSpot = true;
+                                break;
+                            }
+                        }
+                        
+                        // If still blocked, step out further from the dot (Escape Orbit)
+                        if (!foundSpot) {
+                            finalOffset = [0, -45 - finalRadius];
+                            labelRegistry.push({ x: pt.x - labelW/2, y: pt.y - labelH - 45 - finalRadius, w: labelW, h: labelH });
+                        }
+                    }
 
                     marker.bindTooltip(tooltipHtml, { 
-                        direction: tooltipDir, 
-                        offset: customOffset,
+                        direction: finalDir, 
+                        offset: finalOffset,
                         className: 'leaflet-custom-tooltip',
                         permanent: showPermanent
                     });
