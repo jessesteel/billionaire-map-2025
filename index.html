@@ -292,12 +292,14 @@
                     if (activeNode) {
                         if (d.id === activeNode.id) showPermanent = true;
                     } else if (query.length === 0) {
-                        // Level 1: Global Titans at Zoom 4+
+                        // Level 1: Titans ($100B+) at Zoom 4+
                         if (currentZoom >= 4 && d.type === 'Person' && d.worth > 100000) showPermanent = true;
-                        // Level 2: Big Players at Zoom 9+
-                        if (currentZoom >= 9 && d.type === 'Person' && d.worth > 20000) showPermanent = true;
-                        // Level 3: ONLY show Corporate Names at extreme zoom (Level 10+)
-                        if (currentZoom >= 10 && d.type === 'Company') showPermanent = true;
+                        // Level 2: Mega-Players ($50B+) at Zoom 6+
+                        if (currentZoom >= 6 && d.type === 'Person' && d.worth > 50000) showPermanent = true;
+                        // Level 3: Major Billionaires ($10B+) at Zoom 8+
+                        if (currentZoom >= 8 && d.type === 'Person' && d.worth > 10000) showPermanent = true;
+                        // Level 4: ONLY show Corporate Names at extreme zoom (Level 11+)
+                        if (currentZoom >= 11 && d.type === 'Company') showPermanent = true;
                     }
 
                     // Anti-Collision Engine with Callout Displacement
