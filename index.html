@@ -216,7 +216,7 @@
                     return labelRegistry.some(r => {
                         return !(rect.x + rect.w < r.x || 
                                  rect.x > r.x + r.w || 
-                                 rect.y + rect.y < r.y || 
+                                 rect.y + rect.h < r.y || 
                                  rect.y > r.y + r.h);
                     });
                 };
