@@ -69,6 +69,7 @@
             const mapRef = useRef(null);
             const mapInstance = useRef(null);
             const [activeNode, setActiveNode] = useState(null);
+            const [currentZoom, setCurrentZoom] = useState(2); // Track zoom for intelligent labeling
 
             useEffect(() => {
                 if (!mapInstance.current && mapRef.current) {
@@ -87,6 +88,11 @@
                         subdomains: 'abcd',
                         maxZoom: 20
                     }).addTo(mapInstance.current);
+
+                    // Track Zoom Changes
+                    mapInstance.current.on('zoomend', () => {
+                        setCurrentZoom(mapInstance.current.getZoom());
+                    });
                 }
 
                 const map = mapInstance.current;
@@ -241,9 +247,9 @@
                         finalRadius = 3; // Minimalist subsidiary
                     }
 
-                    // Professional Color Palette
+                    // Professional Blue Depth Palette
                     const palette = {
-                      'Person': '#00f2ff',      // Electric Cyan
+                      'Person': d.worth > 100000 ? '#00f2ff' : (d.worth > 20000 ? '#0077ff' : '#0044ff'),
                       'Company': '#ff00a6',     // Royal Magenta
                       'Sub-Company': '#ffcc00'  // Soft Gold
                     };
@@ -261,6 +267,19 @@
                         className: isConnected ? 'glow-node active' : 'dim-node'
                     });
 
+                    // Intelligent Adaptive Labels
+                    let showPermanent = false;
+                    if (activeNode) {
+                        if (d.id === activeNode.id) showPermanent = true;
+                    } else if (query.length === 0) {
+                        // Level 1: Global Titans at Zoom 3-4
+                        if (currentZoom >= 4 && d.type === 'Person' && d.worth > 100000) showPermanent = true;
+                        // Level 2: All Billionaires at Zoom 6
+                        if (currentZoom >= 6 && d.type === 'Person') showPermanent = true;
+                        // Level 3: All Company Hubs at Zoom 5
+                        if (currentZoom >= 5 && d.type === 'Company') showPermanent = true;
+                    }
+
                     const tooltipHtml = `
                         <div class="scene-tooltip" style="background:transparent; border:none; box-shadow:none;">
                         <div class="tooltip-name">${d.name}</div>
@@ -271,12 +290,8 @@
                         </div>
                     `;
                     
-                    // Constrain text overlap mathematically: Allow all nodes in group, but randomly offset their boxes so they don't crash
-                    let showPermanent = false;
-                    if (activeNode) {
-                        if (d.id === activeNode.id) showPermanent = true;
-                        if (activeNode.type === 'Person' && activeIds.has(d.id)) showPermanent = true;
-                    }
+                    // Constrain text overlap mathematically
+                    // Handled above via showPermanent logic
                     
                     // Global Cardinal Anti-Collision System:
                     // Force overlapping labels to Orbit their dot in different cardinal directions 
@@ -316,7 +331,7 @@
                     });
                 }
 
-            }, [nodes, links, activeNode, walmartLocations, filters, debouncedSearchQuery]);
+            }, [nodes, links, activeNode, walmartLocations, filters, debouncedSearchQuery, currentZoom]);
 
             return (
                 <div className="globe-container">
@@ -329,7 +344,7 @@
             const [graphData, setGraphData] = useState({ nodes: [], links: [] });
             const [walmartLocations, setWalmartLocations] = useState([]);
             const [filters, setFilters] = useState({ billionaires: true, companies: true, subs: true, assets: true });
-            const [isPanelVisible, setIsPanelVisible] = useState(true);
+            const [isPanelVisible, setIsPanelVisible] = useState(window.innerWidth > 768);
             const [searchQuery, setSearchQuery] = useState("");
             const [debouncedSearchQuery, setDebouncedSearchQuery] = useState("");
             const [errorMsg, setErrorMsg] = useState(null);
@@ -412,14 +427,14 @@
                                 // Solution: Arrange billionaires in a compact 5x5 grid ranked by wealth.
                                 // This makes the "grouping" look like an intentional tactical cluster.
                                 if (bucket.group.length > 1) {
-                                    const cols = 5; // Fixed grid width for visual uniformity
+                                    const cols = 5; 
                                     const row = Math.floor(index / cols);
                                     const col = index % cols;
                                     
-                                    const spacingLat = 0.005; // 500m vertical
-                                    const spacingLng = 0.007; // 700m horizontal
+                                    // Professional Polish: Increased clustering spacing for "Airy" look!
+                                    const spacingLat = 0.012; 
+                                    const spacingLng = 0.015; 
                                     
-                                    // Center the grid over the hq coordinates
                                     const offsetLat = (row - (Math.floor(Math.sqrt(bucket.group.length)) / 2)) * spacingLat;
                                     const offsetLng = (col - (cols / 2)) * spacingLng;
                                     
