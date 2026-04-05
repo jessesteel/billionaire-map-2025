@@ -292,13 +292,19 @@
                     if (activeNode) {
                         if (d.id === activeNode.id) showPermanent = true;
                     } else if (query.length === 0) {
-                        // Level 1: Titans ($100B+) at Zoom 4+
+                        // Level 1: $100B+ at Zoom 4+
                         if (currentZoom >= 4 && d.type === 'Person' && d.worth > 100000) showPermanent = true;
-                        // Level 2: Mega-Players ($50B+) at Zoom 6+
+                        // Level 2: $75B+ at Zoom 5+
+                        if (currentZoom >= 5 && d.type === 'Person' && d.worth > 75000) showPermanent = true;
+                        // Level 3: $50B+ at Zoom 6+
                         if (currentZoom >= 6 && d.type === 'Person' && d.worth > 50000) showPermanent = true;
-                        // Level 3: Major Billionaires ($10B+) at Zoom 8+
+                        // Level 4: $25B+ at Zoom 7+
+                        if (currentZoom >= 7 && d.type === 'Person' && d.worth > 25000) showPermanent = true;
+                        // Level 5: $10B+ at Zoom 8+
                         if (currentZoom >= 8 && d.type === 'Person' && d.worth > 10000) showPermanent = true;
-                        // Level 4: ONLY show Corporate Names at extreme zoom (Level 11+)
+                        // Level 6: All Billionaires ($1B+) at Zoom 9+
+                        if (currentZoom >= 9 && d.type === 'Person') showPermanent = true;
+                        // Level 7: ONLY show Corporate Names at extreme zoom (Level 11+)
                         if (currentZoom >= 11 && d.type === 'Company') showPermanent = true;
                     }
 
