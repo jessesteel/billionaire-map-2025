@@ -279,17 +279,17 @@
                         className: isConnected ? 'glow-node active' : 'dim-node'
                     });
 
-                    // Intelligent Adaptive Labels
+                    // Intelligent Adaptive Labels: High-End Minimalist Approach
                     let showPermanent = false;
                     if (activeNode) {
                         if (d.id === activeNode.id) showPermanent = true;
                     } else if (query.length === 0) {
-                        // Level 1: Global Titans at Zoom 3-4
+                        // Level 1: Global Titans at Zoom 4+
                         if (currentZoom >= 4 && d.type === 'Person' && d.worth > 100000) showPermanent = true;
-                        // Level 2: All Billionaires at Zoom 6
-                        if (currentZoom >= 6 && d.type === 'Person') showPermanent = true;
-                        // Level 3: All Company Hubs at Zoom 5
-                        if (currentZoom >= 5 && d.type === 'Company') showPermanent = true;
+                        // Level 2: Big Players at Zoom 8+
+                        if (currentZoom >= 8 && d.type === 'Person' && d.worth > 20000) showPermanent = true;
+                        // Level 3: Major Corporate HQs at Zoom 6+
+                        if (currentZoom >= 6 && d.type === 'Company') showPermanent = true;
                     }
 
                     const tooltipHtml = `
@@ -302,8 +302,7 @@
                         </div>
                     `;
                     
-                    // Advanced Geometric Anti-Collision Logic:
-                    // Force labels to "Orbit" their dot looking for "Empty Air" on your screen.
+                    // Advanced Geometric Anti-Collision Logic: "Infinite Orbit & Step"
                     let finalDir = 'top';
                     let finalOffset = [0, -12 - finalRadius];
                     
@@ -312,32 +311,34 @@
                         const labelW = Math.max(100, (d.name.length * 8) + 20); // Estimate width
                         const labelH = 65; 
 
-                        const placements = [
-                            { dir: 'top', off: [0, -15 - finalRadius], rx: -labelW/2, ry: -labelH - 10 },
-                            { dir: 'bottom', off: [0, 15 + finalRadius], rx: -labelW/2, ry: 10 },
-                            { dir: 'right', off: [15 + finalRadius, 0], rx: 10, ry: -labelH/2 },
-                            { dir: 'left', off: [-15 - finalRadius, 0], rx: -labelW - 10, ry: -labelH/2 },
-                            // Secondary Orbit (Diagonals)
-                            { dir: 'top', off: [25, -25], rx: 0, ry: -labelH - 5 },
-                            { dir: 'bottom', off: [-25, 25], rx: -labelW, ry: 5 }
-                        ];
-
                         let foundSpot = false;
-                        for (const p of placements) {
-                            const rect = { x: pt.x + p.rx, y: pt.y + p.ry, w: labelW, h: labelH };
-                            if (!checkOverlap(rect)) {
-                                finalDir = p.dir;
-                                finalOffset = p.off;
-                                labelRegistry.push(rect);
-                                foundSpot = true;
-                                break;
+                        // Try 3 distance levels: Close (20px), Medium (40px), Far (60px)
+                        const distances = [15 + finalRadius, 40 + finalRadius, 65 + finalRadius];
+                        
+                        for (const dist of distances) {
+                            const candidates = [
+                                { dir: 'top', off: [0, -dist], rx: -labelW/2, ry: -labelH - dist + 5 },
+                                { dir: 'bottom', off: [0, dist], rx: -labelW/2, ry: dist - 5 },
+                                { dir: 'right', off: [dist, 0], rx: dist - 5, ry: -labelH/2 },
+                                { dir: 'left', off: [-dist, 0], rx: -labelW - dist + 5, ry: -labelH/2 }
+                            ];
+
+                            for (const p of candidates) {
+                                const rect = { x: pt.x + p.rx, y: pt.y + p.ry, w: labelW, h: labelH };
+                                if (!checkOverlap(rect)) {
+                                    finalDir = p.dir;
+                                    finalOffset = p.off;
+                                    labelRegistry.push(rect);
+                                    foundSpot = true;
+                                    break;
+                                }
                             }
+                            if (foundSpot) break;
                         }
                         
-                        // If still blocked, step out further from the dot (Escape Orbit)
+                        // "Zero-Clutter" Hard Cutoff: If no spot found after 12 attempts, hide!
                         if (!foundSpot) {
-                            finalOffset = [0, -45 - finalRadius];
-                            labelRegistry.push({ x: pt.x - labelW/2, y: pt.y - labelH - 45 - finalRadius, w: labelW, h: labelH });
+                            showPermanent = false;
                         }
                     }
 
