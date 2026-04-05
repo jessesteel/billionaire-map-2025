@@ -286,10 +286,10 @@
                     } else if (query.length === 0) {
                         // Level 1: Global Titans at Zoom 4+
                         if (currentZoom >= 4 && d.type === 'Person' && d.worth > 100000) showPermanent = true;
-                        // Level 2: Big Players at Zoom 8+
-                        if (currentZoom >= 8 && d.type === 'Person' && d.worth > 20000) showPermanent = true;
-                        // Level 3: Major Corporate HQs at Zoom 6+
-                        if (currentZoom >= 6 && d.type === 'Company') showPermanent = true;
+                        // Level 2: Big Players at Zoom 9+
+                        if (currentZoom >= 9 && d.type === 'Person' && d.worth > 20000) showPermanent = true;
+                        // Level 3: Major Corporate HQs at Zoom 7+
+                        if (currentZoom >= 7 && d.type === 'Company') showPermanent = true;
                     }
 
                     const tooltipHtml = `
@@ -308,8 +308,8 @@
                     
                     if (showPermanent) {
                         const pt = map.latLngToContainerPoint([d.lat, d.lng]);
-                        const labelW = Math.max(100, (d.name.length * 8) + 20); // Estimate width
-                        const labelH = 65; 
+                        const labelW = Math.max(80, (d.name.length * 6) + 15); // Slimmer estimation
+                        const labelH = 50; // Compact height
 
                         let foundSpot = false;
                         // Try 3 distance levels: Close (20px), Medium (40px), Far (60px)
