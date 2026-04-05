@@ -217,6 +217,47 @@ body, html {
   display: none; /* Keep assets clean */
 }
 
+/* Tooltip Callout Pointers (Notches) */
+.scene-tooltip::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(10, 12, 24, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.tooltip-top::after {
+  bottom: -6px;
+  left: calc(50% - 5px);
+  border-top: none;
+  border-left: none;
+}
+
+.tooltip-bottom::after {
+  top: -6px;
+  left: calc(50% - 5px);
+  border-bottom: none;
+  border-right: none;
+}
+
+.tooltip-left::after {
+  right: -6px;
+  top: calc(50% - 5px);
+  border-bottom: none;
+  border-left: none;
+}
+
+.tooltip-right::after {
+  left: -6px;
+  top: calc(50% - 5px);
+  border-top: none;
+  border-right: none;
+}
+
 /* Search UI Components */
 .search-container {
   position: absolute;

@@ -221,14 +221,10 @@
                     });
                 };
 
-                // CRITICAL FIX: Sort the visible nodes by wealth descending.
+                // CRITICAL FIX: Sort the visible nodes by wealth ASCENDING.
                 // This guarantees that massive corporate behemoths are painted to the 
-                // Canvas FIRST, and smaller actors paint LAST, sitting permanently on top and clickable!
-                visibleNodes.sort((a, b) => {
-                    const worthA = a.type === 'Person' ? a.worth : (a.type === 'Company' ? 3000 : 1000);
-                    const worthB = b.type === 'Person' ? b.worth : (b.type === 'Company' ? 3000 : 1000);
-                    return worthB - worthA;
-                });
+                // Canvas LAST, sitting physically on top of all other layers!
+                visibleNodes.sort((a,b) => (a.worth || 0) - (b.worth || 0));
                 
                 const query = (debouncedSearchQuery || '').trim().toLowerCase();
                 const bounds = map.getBounds().pad(0.1); // Visible viewport with slight buffer
@@ -252,8 +248,11 @@
                         activeBounds.push([d.lat, d.lng]);
                     }
 
-                    // Mathematically scale nodes based on geometric wealth mapping
-                    let finalRadius = 4;
+                    // Mathematically scale nodes based on wealth
+                    let finalRadius = d.type === 'Person' ? 8 : (d.type === 'Company' ? 6 : 4);
+                    if (d.type === 'Person' && currentZoom < 5) finalRadius = 12; // "Titan" Scaling for Zoom Out
+                    if (d.type === 'Person' && d.worth > 100000) finalRadius *= 1.5; // Top 10 Highlighters
+                    
                     if (d.type === 'Person') {
                         // $1B = 4px radius, capped at 14px for a clean, sharp data-point feel.
                         const billions = (d.worth || 1000) / 1000;
@@ -297,28 +296,18 @@
                         if (currentZoom >= 7 && d.type === 'Company') showPermanent = true;
                     }
 
-                    const tooltipHtml = `
-                        <div class="scene-tooltip ${d.type === 'Person' ? 'label-titan' : 'label-asset'}" style="background:transparent; border:none; box-shadow:none;">
-                        <div class="tooltip-name">${d.name}</div>
-                        ${d.type === 'Person' ? `<div class="tooltip-worth">$${(d.worth / 1000).toFixed(1)} Billion</div>` : 
-                          d.type === 'Sub-Company' ? '<div class="tooltip-meta" style="color: #ffaa00; font-weight: bold;">Subsidiary</div>' : 
-                          '<div class="tooltip-meta" style="color: #ff00d2; font-weight: bold; font-size: 0.65rem;">Asset</div>'}
-                        <div class="tooltip-meta">${d.details || d.industry || ''}</div>
-                        </div>
-                    `;
-                    
-                    // Advanced Geometric Anti-Collision Logic: "Infinite Orbit & Step"
+                    // Anti-Collision Engine with Callout Displacement
                     let finalDir = 'top';
                     let finalOffset = [0, -12 - finalRadius];
                     
                     if (showPermanent) {
                         const pt = map.latLngToContainerPoint([d.lat, d.lng]);
-                        const labelW = Math.max(80, (d.name.length * 6) + 15); // Slimmer estimation
-                        const labelH = 50; // Compact height
+                        const labelW = Math.max(90, (d.name.length * 6) + 15);
+                        const labelH = 55; 
 
                         let foundSpot = false;
-                        // Try 3 distance levels: Close (20px), Medium (40px), Far (60px)
-                        const distances = [15 + finalRadius, 40 + finalRadius, 65 + finalRadius];
+                        // Tiered Displacement: Start at 25px gap (Callout depth)
+                        const distances = [25 + finalRadius, 50 + finalRadius, 75 + finalRadius];
                         
                         for (const dist of distances) {
                             const candidates = [
@@ -341,11 +330,19 @@
                             if (foundSpot) break;
                         }
                         
-                        // "Zero-Clutter" Hard Cutoff: If no spot found after 12 attempts, hide!
-                        if (!foundSpot) {
-                            showPermanent = false;
-                        }
+                        // "Zero-Clutter" Cutoff
+                        if (!foundSpot) showPermanent = false;
                     }
+
+                    const tooltipHtml = `
+                        <div class="scene-tooltip ${d.type === 'Person' ? 'label-titan' : 'label-asset'} tooltip-${finalDir}" style="background:transparent; border:none; box-shadow:none;">
+                        <div class="tooltip-name">${d.name}</div>
+                        ${d.type === 'Person' ? `<div class="tooltip-worth">$${(d.worth / 1000).toFixed(1)} Billion</div>` : 
+                          d.type === 'Sub-Company' ? '<div class="tooltip-meta" style="color: #ffaa00; font-weight: bold;">Subsidiary</div>' : 
+                          '<div class="tooltip-meta" style="color: #ff00d2; font-weight: bold; font-size: 0.65rem;">Asset</div>'}
+                        <div class="tooltip-meta">${d.details || d.industry || ''}</div>
+                        </div>
+                    `;
 
                     marker.bindTooltip(tooltipHtml, { 
                         direction: finalDir, 
