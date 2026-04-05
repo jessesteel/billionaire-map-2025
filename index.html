@@ -227,13 +227,17 @@
                 visibleNodes.sort((a,b) => (a.worth || 0) - (b.worth || 0));
                 
                 const query = (debouncedSearchQuery || '').trim().toLowerCase();
-                const bounds = map.getBounds().pad(0.1); // Visible viewport with slight buffer
+                const bounds = map.getBounds().pad(0.1); 
 
-                visibleNodes.forEach(d => {
-                    // PERFORMANCE: Frustum Culling
-                    // If node is off-screen, skip entire render/collision math for this node!
-                    if (!bounds.contains([d.lat, d.lng])) return;
+                // REFINED PRIORITY LOOP: 
+                // We must process Billionaires FIRST so they claim the best screen-space.
+                // We sort visibleNodes for Canvas (ASC), but we loop through an isolated 
+                // DESCENDING list for label calculations.
+                const priorityNodes = [...visibleNodes]
+                    .filter(d => bounds.contains([d.lat, d.lng]))
+                    .sort((a,b) => (b.worth || 0) - (a.worth || 0));
 
+                priorityNodes.forEach(d => {
                     // Check search query dynamically (bypassed if clicking someone explicitly)
                     let searchMatch = true;
                     if (query.length > 0 && !activeNode) {
@@ -292,8 +296,8 @@
                         if (currentZoom >= 4 && d.type === 'Person' && d.worth > 100000) showPermanent = true;
                         // Level 2: Big Players at Zoom 9+
                         if (currentZoom >= 9 && d.type === 'Person' && d.worth > 20000) showPermanent = true;
-                        // Level 3: Major Corporate HQs at Zoom 7+
-                        if (currentZoom >= 7 && d.type === 'Company') showPermanent = true;
+                        // Level 3: ONLY show Corporate Names at extreme zoom (Level 10+)
+                        if (currentZoom >= 10 && d.type === 'Company') showPermanent = true;
                     }
 
                     // Anti-Collision Engine with Callout Displacement
