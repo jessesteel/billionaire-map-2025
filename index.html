@@ -346,13 +346,26 @@
                         direction: finalDir, 
                         offset: finalOffset,
                         className: 'leaflet-custom-tooltip',
-                        permanent: showPermanent
+                        permanent: showPermanent,
+                        interactive: true // EXTREMELY CRITICAL: Makes the text itself clickable!
                     });
                     
                     marker.on('click', (e) => {
                         L.DomEvent.stopPropagation(e);
                         setActiveNode(d);
                         if (onNodeFocus) onNodeFocus(d);
+                    });
+
+                    // Also handle clicking on the label itself (for better accessibility/usability)
+                    marker.on('tooltipopen', (e) => {
+                        if (e.tooltip.getElement()) {
+                            e.tooltip.getElement().style.cursor = 'pointer';
+                            e.tooltip.getElement().onclick = (me) => {
+                                L.DomEvent.stopPropagation(me);
+                                setActiveNode(d);
+                                if (onNodeFocus) onNodeFocus(d);
+                            };
+                        }
                     });
 
                     marker.addTo(map);
