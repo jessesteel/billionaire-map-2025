@@ -671,7 +671,7 @@
                         />
                     </div>
 
-                    {graphData.nodes.length > 0 && <FlatMap nodes={graphData.nodes} links={graphData.links} walmartLocations={walmartLocations} filters={filters} debouncedSearchQuery={debouncedSearchQuery} onNodeFocus={n => setIsPanelVisible(!n)} />}
+                    {graphData.nodes.length > 0 && <FlatMap nodes={graphData.nodes} links={graphData.links} walmartLocations={walmartLocations} filters={filters} debouncedSearchQuery={debouncedSearchQuery} onNodeFocus={n => { if (n) setIsPanelVisible(false); }} />}
                 </div>
             );
         };
