@@ -195,6 +195,28 @@ body, html {
   color: #a0a5b8;
 }
 
+.label-titan .tooltip-name {
+  font-weight: 800;
+  color: #00f2ff;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.4);
+  font-size: 1rem;
+}
+
+.label-asset .tooltip-name {
+  font-size: 0.75rem;
+  color: #a0a5b8;
+  font-weight: 400;
+}
+
+.label-asset .tooltip-meta {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.label-asset .tooltip-worth {
+  display: none; /* Keep assets clean */
+}
+
 /* Search UI Components */
 .search-container {
   position: absolute;

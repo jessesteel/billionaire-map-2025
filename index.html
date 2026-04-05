@@ -231,8 +231,13 @@
                 });
                 
                 const query = (debouncedSearchQuery || '').trim().toLowerCase();
-                
+                const bounds = map.getBounds().pad(0.1); // Visible viewport with slight buffer
+
                 visibleNodes.forEach(d => {
+                    // PERFORMANCE: Frustum Culling
+                    // If node is off-screen, skip entire render/collision math for this node!
+                    if (!bounds.contains([d.lat, d.lng])) return;
+
                     // Check search query dynamically (bypassed if clicking someone explicitly)
                     let searchMatch = true;
                     if (query.length > 0 && !activeNode) {
@@ -293,11 +298,11 @@
                     }
 
                     const tooltipHtml = `
-                        <div class="scene-tooltip" style="background:transparent; border:none; box-shadow:none;">
+                        <div class="scene-tooltip ${d.type === 'Person' ? 'label-titan' : 'label-asset'}" style="background:transparent; border:none; box-shadow:none;">
                         <div class="tooltip-name">${d.name}</div>
                         ${d.type === 'Person' ? `<div class="tooltip-worth">$${(d.worth / 1000).toFixed(1)} Billion</div>` : 
                           d.type === 'Sub-Company' ? '<div class="tooltip-meta" style="color: #ffaa00; font-weight: bold;">Subsidiary</div>' : 
-                          '<div class="tooltip-meta" style="color: #ff00d2; font-weight: bold;">Corporate Asset</div>'}
+                          '<div class="tooltip-meta" style="color: #ff00d2; font-weight: bold; font-size: 0.65rem;">Asset</div>'}
                         <div class="tooltip-meta">${d.details || d.industry || ''}</div>
                         </div>
                     `;
@@ -370,17 +375,32 @@
 
                     marker.addTo(map);
                 });
-
-                // Auto-center and zoom into the isolated structure
-                if (activeNode && activeBounds.length > 0) {
-                    map.flyToBounds(activeBounds, { 
-                        padding: [150, 150], 
-                        maxZoom: 5,   // Prevent zooming in too deeply onto single street-levels
-                        duration: 1.2 // Smooth cinematic pan
-                    });
-                }
-
             }, [nodes, links, activeNode, walmartLocations, filters, debouncedSearchQuery, currentZoom]);
+
+            // FREEDOM OF MOVEMENT: Auto-center ONLY when the target selection changes
+            useEffect(() => {
+                if (activeNode) {
+                    // Recalculate precisely which nodes are in the "Active" web to define the camera bounds
+                    const activeIds = new Set();
+                    activeIds.add(activeNode.id);
+                    
+                    // Simple traversal to gather the immediate bounding box
+                    links.forEach(l => {
+                        if (l.source === activeNode.id) activeIds.add(l.target);
+                        if (l.target === activeNode.id) activeIds.add(l.source);
+                    });
+                    
+                    const boundsArray = nodes.filter(n => activeIds.has(n.id)).map(n => [n.lat, n.lng]);
+                    
+                    if (boundsArray.length > 0) {
+                        mapInstance.current.flyToBounds(boundsArray, { 
+                            padding: [150, 150], 
+                            maxZoom: 5,   
+                            duration: 1.2 
+                        });
+                    }
+                }
+            }, [activeNode?.id]); // Only refly when a NEW billionaire is selected
 
             return (
                 <div className="globe-container">
