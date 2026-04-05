@@ -117,7 +117,12 @@ body, html {
   stroke-dasharray: 2, 20 !important; /* Extremely tight particles: 2px wide, massive gap */
   stroke-linecap: round !important;
   animation: marching-ants 1.2s linear infinite !important;
-  filter: drop-shadow(0px 0px 4px rgba(0,255,255,0.8));
+  filter: drop-shadow(0px 0px 8px rgba(0, 242, 255, 0.4));
+}
+
+.glow-node.active {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+  stroke: rgba(255, 255, 255, 1) !important;
 }
 
 @keyframes marching-ants {

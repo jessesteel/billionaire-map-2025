@@ -230,27 +230,34 @@
                     }
 
                     // Mathematically scale nodes based on geometric wealth mapping
-                    let finalRadius = 5;
+                    let finalRadius = 4;
                     if (d.type === 'Person') {
-                        // Using Square Root mapping ensures the 2D surface area of the circle precisely mirrors their dollar value!
-                        // $1B = 5px radius, now capped at 18px for better visibility and clicking.
+                        // $1B = 4px radius, capped at 14px for a clean, sharp data-point feel.
                         const billions = (d.worth || 1000) / 1000;
-                        finalRadius = Math.min(18, Math.max(5, 3.5 * Math.sqrt(billions)));
+                        finalRadius = Math.min(14, Math.max(4, 3.0 * Math.sqrt(billions)));
                     } else if (d.type === 'Company') {
-                        finalRadius = 7; // Larger hub
+                        finalRadius = 6; // Refined hub
                     } else if (d.type === 'Sub-Company') {
-                        finalRadius = 4; // Distinct subsidiary
+                        finalRadius = 3; // Minimalist subsidiary
                     }
+
+                    // Professional Color Palette
+                    const palette = {
+                      'Person': '#00f2ff',      // Electric Cyan
+                      'Company': '#ff00a6',     // Royal Magenta
+                      'Sub-Company': '#ffcc00'  // Soft Gold
+                    };
+                    const nodeColor = palette[d.type] || d.color;
                     
                     // If an active search is isolating data, completely erase non-matching items to prevent visual compounding!
                     const isFaded = (query.length > 0 && !activeNode && !isConnected);
 
                     const marker = L.circleMarker([d.lat, d.lng], {
                         radius: isFaded ? 0 : finalRadius,
-                        color: 'transparent', // RESTORE INVISIBLE STROKE: No more blobs!
-                        weight: isFaded ? 0 : 35, // Maintain the massive invisible hit-box (35px) for ease of clinical clicking
-                        fillColor: d.color,
-                        fillOpacity: isFaded ? 0.0 : (isConnected ? 0.8 : 0.05),
+                        color: isConnected ? 'rgba(255, 255, 255, 0.6)' : 'transparent', 
+                        weight: isConnected ? 1 : 35, // 1px definition when active, 35px hit-box when resting
+                        fillColor: nodeColor,
+                        fillOpacity: isFaded ? 0.0 : (isConnected ? 0.9 : 0.3), // Layered Translucency
                         className: isConnected ? 'glow-node active' : 'dim-node'
                     });
 
